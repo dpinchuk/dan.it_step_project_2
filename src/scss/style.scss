@@ -1,0 +1,357 @@
+@import "header";
+@import "footer";
+
+
+/*Common header variables*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+$header_button_menu: "../img/common/header/logo.png";
+$bg_color_nav: #262627;
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+
+/*Header variables 320*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+$logo_320: "../img/320/header/logo_320.png";
+$button_menu_320: "../img/common/header/header_button_menu.png";
+$bg_header_320: "../img/320/header/bg_header_320.png";
+
+$width_container_navbar_320: 290px;
+$width_container_text_320: 260px;
+
+$p_top_header_320: 30px;
+$p_bottom_header_320: 30px;
+$btn_buy_color_320: #ffffff;
+$btn_buy_font_size_320: 15px;
+$btn_buy_font_weight_320: 700;
+$border_radius_320: 20px;
+
+$header_text_p_top_320: 45px;
+$header_text_p_bottom_320: 45px;
+
+$p_top_320: 12px;
+$p_right_320: 25px;
+$p_bottom_320: 12px;
+$p_left_320: 25px;
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+
+/*Header variables 480*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+$logo_480: "../img/480/header/logo_480.png";
+$button_menu_480: "../img/common/header/header_button_menu.png";
+$bg_header_480: "../img/480/header/bg_header_480.png";
+
+$width_container_navbar_480: 430px;
+$width_container_text_480: 375px;
+
+$p_top_header_480: 30px;
+$p_bottom_header_480: 30px;
+$btn_buy_color_480: #ffffff;
+$btn_buy_font_size_480: 17px;
+$btn_buy_font_weight_480: 700;
+$border-radius_480: 20px;
+
+$header_text_p_top_480: 100px;
+$header_text_p_bottom_480: 100px;
+
+$p_top_480: 15px;
+$p_right_480: 25px;
+$p_bottom_480: 15px;
+$p_left_480: 25px;
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+
+@mixin bg_image($bg_image) {
+  background: url($bg_image) no-repeat;
+  //width: 100px;
+  height: 100px;
+  //object-fit: contain;
+
+}
+
+@mixin bg_color($bg_color) {
+  background-color: $bg_color;
+}
+
+@mixin container_size($width) {
+  width: $width;
+}
+
+@mixin btn_style($border-radius) {
+  border-radius: $border-radius;
+}
+
+@mixin padding_btn_text($p_top, $p_right, $p_bottom, $p_left) {
+  padding: $p_top $p_right $p_bottom $p_left;
+}
+
+@mixin padding_top_bottom($p_top, $p_bottom) {
+  padding-top: $p_top;
+  padding-bottom: $p_bottom;
+}
+
+@mixin font_style($color, $font_size, $font_weight) {
+  color: $color;
+  font-size: $font_size;
+  font-weight: $font_weight;
+}
+
+
+/*Initialization space*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+
+/*Common classes*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.btn {
+  border-radius: 15px;
+  color: #ffffff;
+}
+
+.header__container-navbar, .header__container-text {
+  margin: 0 auto;
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+
+/*Header*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+.header {
+  @include bg_color($bg_color_nav);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+
+  &__navbar {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__navbar-button-menu {
+    @include bg_image($header_button_menu);
+  }
+
+  &__navbar-button-buy {
+    background-color: #8c80ab;
+  }
+
+  &__text {
+    background-color: #000001;
+  }
+
+  &__title {
+    color: #ffffff;
+    font-weight: 700;
+  }
+
+  &__description {
+    color: #8d81ac;
+    font-weight: 400;
+    line-height: 45px;
+  }
+
+  &__version {
+    color: #848e97;
+    font-weight: 400;
+  }
+
+}
+
+/*320*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 320px) {
+
+  .header {
+    &__container-navbar {
+      @include container_size($width_container_navbar_320);
+    }
+
+    &__navbar {
+      @include padding_top_bottom($p_top_header_320, $p_bottom_header_320);
+      justify-content: space-between;
+    }
+
+    &__navbar-logo {
+      @include bg_image($logo_320);
+    }
+
+    &__navbar-button-buy {
+      @include bg_color(#8c80ab);
+      @include btn_style($border_radius_320);
+      @include font_style($btn_buy_color_320, $btn_buy_font_size_320, $btn_buy_font_weight_320);
+      @include padding_btn_text($p_top_320, $p_right_320, $p_bottom_320, $p_left_320);
+    }
+
+    &__container-text {
+      @include container_size($width_container_text_320);
+    }
+
+    &__text {
+      @include padding_top_bottom($header_text_p_top_320, $header_text_p_bottom_320);
+    }
+
+    &__title {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    &__description {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    &__version {
+      font-size: 14px;
+    }
+
+    &__bg-image {
+      @include bg_image($bg_header_320);
+    }
+
+  }
+
+}
+
+
+/*480*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 480px) and (min-width: 321px) {
+
+  .header {
+    &__container-navbar {
+      @include container_size($width_container_navbar_480);
+    }
+
+    &__navbar {
+      @include padding_top_bottom($p_top_header_480, $p_bottom_header_480);
+      justify-content: space-between;
+    }
+
+    &__navbar-logo {
+      @include bg_image($logo_480);
+    }
+
+    &__navbar-button-buy {
+      @include bg_color(#8c80ab);
+      @include btn_style($border-radius_480);
+      @include font_style($btn_buy_color_480, $btn_buy_font_size_480, $btn_buy_font_weight_480);
+      @include padding_btn_text($p_top_480, $p_right_480, $p_bottom_480, $p_left_480);
+    }
+
+    &__container-text {
+      @include container_size($width_container_text_480);
+    }
+
+    &__text {
+      @include padding_top_bottom($header_text_p_top_480, $header_text_p_bottom_480);
+    }
+
+    &__title {
+      font-size: 54px;
+      margin-bottom: 35px;
+    }
+
+    &__description {
+      font-size: 20px;
+      margin-bottom: 35px;
+    }
+
+    &__version {
+      font-size: 16px;
+    }
+
+    &__bg-image {
+      @include bg_image($bg_header_320);
+    }
+
+  }
+
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+
+/*Include fonts*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+@font-face {
+  font-family: Montserrat, sans-serif;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+
+//$blue: #3bbfce; // переменная
+//$radius: 15px;
+//
+//@mixin table-base { // добавляет куски кода
+//  th {
+//    text-align: center;
+//  }
+//  td, th {
+//    padding: 2px;
+//  }
+//}
+//
+//.color {
+//  color: yellow;
+//}
+//
+//@mixin border-radius($radius) {
+//  -webkit-border-radius: $radius;
+//  -moz-border-radius: $radius;
+//  -ms-border-radius: $radius;
+//  border-radius: $radius;
+//}
+//
+//.box-1 {
+//  @include border-radius($radius)
+//}
+//
+//#data {
+//  @include table-base
+//}
+//
+//.btn {
+//  width: 100%;
+//  height: 100%;
+//  background-color: green;
+//  border: 1px solid $blue;
+//  @extend .color;
+//  padding: 20px 10px;
+//
+//  ul {
+//    padding: 0;
+//    @extend .color;
+//    li {
+//      margin-left: 100px;
+//      margin-top: 100px;
+//      @extend .color; // добавляет свойство
+//    }
+//  }
+//}
+//
+//* {
+//  background-color: red;
+//}
+//

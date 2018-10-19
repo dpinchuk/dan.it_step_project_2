@@ -1,0 +1,84 @@
+///*Header*/
+///*--------------------------------------------------------------------------------------------------------------------*/
+//.header {
+//  width: 100%;
+//  background-repeat: no-repeat;
+//  background-position: center;
+//}
+//
+//.container {
+//  margin: 0 auto;
+//}
+//
+//.header__navbar {
+//  display: flex;
+//  flex-wrap: wrap;
+//}
+//
+//.header__navbar-logo {
+//  @include bg_image($button_menu_480);
+//}
+//
+//.header__navbar-button-buy {
+//  background-color: #8c80ab;
+//}
+//
+///*320*/
+///*--------------------------------------------------------------------------------------------------------------------*/
+//@media screen and (max-width: 480px) and (min-width: 321px) {
+//
+//  .header {
+//    //@include bg_image($bg_image_url_480);
+//    @include bg_color($bg_color_nav)
+//  }
+//
+//  .container {
+//    @include container_size($width_container_480);
+//  }
+//
+//  .header__navbar {
+//    @include padding_top_bottom($p_top_header_480, $p_bottom_header_480);
+//    justify-content: space-between;
+//  }
+//
+//  .header__navbar-button-buy {
+//    @include bg_color(#8c80ab);
+//    @include font_styles_btn($border-radius_480, $btn_buy_font_size_480, $btn_buy_font_weight_480);
+//    @include padding_btn_text($p_top_480, $p_right_480, $p_bottom_480, $p_left_480);
+//  }
+//  .header__navbar-button-menu {
+//    @include bg_image($logo);
+//  }
+//
+//}
+//
+//
+///*480*/
+///*--------------------------------------------------------------------------------------------------------------------*/
+//@media screen and (max-width: 480px) and (min-width: 321px) {
+//
+//  .header {
+//    //@include bg_image($bg_image_url_480);
+//    @include bg_color($bg_color_nav)
+//  }
+//
+//  .container {
+//    @include container_size($width_container_480);
+//  }
+//
+//  .header__navbar {
+//    @include padding_top_bottom($p_top_header_480, $p_bottom_header_480);
+//    justify-content: space-between;
+//  }
+//
+//  .header__navbar-button-buy {
+//    @include bg_color(#8c80ab);
+//    @include font_styles_btn($border-radius_480, $btn_buy_font_size_480, $btn_buy_font_weight_480);
+//    @include padding_btn_text($p_top_480, $p_right_480, $p_bottom_480, $p_left_480);
+//  }
+//  .header__navbar-button-menu {
+//    @include bg_image($logo);
+//  }
+//
+//}
+///*--------------------------------------------------------------------------------------------------------------------*/
