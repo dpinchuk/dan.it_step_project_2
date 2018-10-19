@@ -4,7 +4,7 @@
 
 /*Common header variables*/
 /*--------------------------------------------------------------------------------------------------------------------*/
-$header_button_menu: "../img/common/header/logo.png";
+$header_button_menu: "../img/common/header/header_button_menu.png";
 $bg_color_nav: #262627;
 /*--------------------------------------------------------------------------------------------------------------------*/
 
@@ -14,9 +14,13 @@ $bg_color_nav: #262627;
 $logo_320: "../img/320/header/logo_320.png";
 $button_menu_320: "../img/common/header/header_button_menu.png";
 $bg_header_320: "../img/320/header/bg_header_320.png";
+$header_button_menu_320: "../img/320/header/header_button_menu_320.png";
 
 $width_container_navbar_320: 290px;
 $width_container_text_320: 260px;
+
+$logo_width_320: 43px;
+$logo_height_320: 41px;
 
 $p_top_header_320: 30px;
 $p_bottom_header_320: 30px;
@@ -40,9 +44,13 @@ $p_left_320: 25px;
 $logo_480: "../img/480/header/logo_480.png";
 $button_menu_480: "../img/common/header/header_button_menu.png";
 $bg_header_480: "../img/480/header/bg_header_480.png";
+$header_button_menu_480: "../img/480/header/header_button_menu_480.png";
 
 $width_container_navbar_480: 430px;
 $width_container_text_480: 375px;
+
+$logo_width_480: 147px;
+$logo_height_480: 41px;
 
 $p_top_header_480: 30px;
 $p_bottom_header_480: 30px;
@@ -63,10 +71,12 @@ $p_left_480: 25px;
 
 @mixin bg_image($bg_image) {
   background: url($bg_image) no-repeat;
-  //width: 100px;
-  height: 100px;
-  //object-fit: contain;
+}
 
+@mixin bg_image_wh($bg_image, $bg_image_width, $bg_image_height) {
+  background: url($bg_image) no-repeat;
+  width: $bg_image_width;
+  height: $bg_image_height;
 }
 
 @mixin bg_color($bg_color) {
@@ -145,12 +155,9 @@ body {
   text-align: center;
 
   &__navbar {
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
-  }
-
-  &__navbar-button-menu {
-    @include bg_image($header_button_menu);
   }
 
   &__navbar-button-buy {
@@ -194,7 +201,7 @@ body {
     }
 
     &__navbar-logo {
-      @include bg_image($logo_320);
+      @include bg_image_wh($logo_320, $logo_width_320, $logo_height_320);
     }
 
     &__navbar-button-buy {
@@ -202,6 +209,12 @@ body {
       @include btn_style($border_radius_320);
       @include font_style($btn_buy_color_320, $btn_buy_font_size_320, $btn_buy_font_weight_320);
       @include padding_btn_text($p_top_320, $p_right_320, $p_bottom_320, $p_left_320);
+    }
+
+    &__navbar-button-menu {
+      @include bg_image($header_button_menu_320);
+      width: 26px;
+      height: 21px;
     }
 
     &__container-text {
@@ -227,7 +240,7 @@ body {
     }
 
     &__bg-image {
-      @include bg_image($bg_header_320);
+      @include bg_image_wh($bg_header_320, 320px, 378px);
     }
 
   }
@@ -250,7 +263,7 @@ body {
     }
 
     &__navbar-logo {
-      @include bg_image($logo_480);
+      @include bg_image_wh($logo_480, $logo_width_480, $logo_height_480);
     }
 
     &__navbar-button-buy {
@@ -258,6 +271,12 @@ body {
       @include btn_style($border-radius_480);
       @include font_style($btn_buy_color_480, $btn_buy_font_size_480, $btn_buy_font_weight_480);
       @include padding_btn_text($p_top_480, $p_right_480, $p_bottom_480, $p_left_480);
+    }
+
+    &__navbar-button-menu {
+      @include bg_image($header_button_menu_480);
+      width: 26px;
+      height: 21px;
     }
 
     &__container-text {
@@ -283,7 +302,7 @@ body {
     }
 
     &__bg-image {
-      @include bg_image($bg_header_320);
+      @include bg_image_wh($bg_header_480, 480px, 402px);
     }
 
   }
