@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
     <title>Title</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@4.0.1/reset.min.css">
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@4.0.1/reset.min.css">-->
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -14,9 +15,16 @@
     <div class="header__container-navbar">
         <div class="header__navbar">
             <div class="header__navbar-logo"></div>
-            <a class="header__navbar-button-buy btn text-capitalize">buy now</a>
+            <a class="header__navbar-button-buy text-capitalize">buy now</a>
             <div class="header__navbar-button-menu"></div>
         </div>
+        <ul class="header__navbar-menu">
+            <li class="header__navbar-menu-option"><a href="#" class="header__navbar-menu-link text-capitalize">overview</a></li>
+            <li class="header__navbar-menu-option"><a href="#" class="header__navbar-menu-link text-capitalize">about fork</a></li>
+            <li class="header__navbar-menu-option"><a href="#" class="header__navbar-menu-link text-capitalize">buying options</a></li>
+            <li class="header__navbar-menu-option"><a href="#" class="header__navbar-menu-link text-capitalize">support</a></li>
+        </ul>
+
     </div>
 
     <div class="header__text">
@@ -27,9 +35,21 @@
         </div>
     </div>
 
-    <div class="header__bg-image"></div>
+    <div class="header__bg-image">
+        <a class="header__bg-image__btn-free text-capitalize">download for free now</a>
+        <p class="header__bg-image_description text-capitalize">unlimited 30-Days trial period</p>
+    </div>
 
 </header>
+
+<section class="section-revolutionary">
+    <div class="section-revolutionary__container">
+        <h3 class="section-revolutionary__header text-uppercase">revolutionary editor</h3>
+        <p class="section-revolutionary__description">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui
+            laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue.
+        </p>
+    </div>
+</section>
 
 </body>
 </html>

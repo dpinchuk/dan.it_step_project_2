@@ -2,6 +2,10 @@
 @import "footer";
 
 
+/*HEADER*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+
 /*Common header variables*/
 /*--------------------------------------------------------------------------------------------------------------------*/
 $header_button_menu: "../img/common/header/header_button_menu.png";
@@ -12,9 +16,16 @@ $bg_color_nav: #262627;
 /*Header variables 320*/
 /*--------------------------------------------------------------------------------------------------------------------*/
 $logo_320: "../img/320/header/logo_320.png";
+
 $button_menu_320: "../img/common/header/header_button_menu.png";
+
 $bg_header_320: "../img/320/header/bg_header_320.png";
+$bg_header_width_320: 320px;
+$bg_header_height_320: 378px;
+
 $header_button_menu_320: "../img/320/header/header_button_menu_320.png";
+$header_button_menu_width_320: 26px;
+$header_button_menu_height_320: 21px;
 
 $width_container_navbar_320: 290px;
 $width_container_text_320: 260px;
@@ -24,27 +35,64 @@ $logo_height_320: 41px;
 
 $p_top_header_320: 30px;
 $p_bottom_header_320: 30px;
+
+// btn_buy_320
+$btn_buy_border_radius_320: 20px;
 $btn_buy_color_320: #ffffff;
+$btn_buy_bg_color_320: #8c80ab;
 $btn_buy_font_size_320: 15px;
 $btn_buy_font_weight_320: 700;
-$border_radius_320: 20px;
+$btn_buy_padding_top_320: 15px;
+$btn_buy_padding_right_320: 25px;
+$btn_buy_padding_bottom_320: 15px;
+$btn_buy_padding_left_320: 25px;
 
-$header_text_p_top_320: 45px;
-$header_text_p_bottom_320: 45px;
+// btn_free_320
+$btn_free_border_radius_320: 20px;
+$btn_free_color_320: #ffffff;
+$btn_free_bg_color_320: #8c80ab;
+$btn_free_font_size_320: 18px;
+$btn_free_font_weight_320: 700;
+$btn_free_padding_top_320: 15px;
+$btn_free_padding_right_320: 30px;
+$btn_free_padding_bottom_320: 15px;
+$btn_free_padding_left_320: 30px;
+$btn_free_left_320: 8%;
+$btn_free_top_320: 93%;
 
-$p_top_320: 12px;
-$p_right_320: 25px;
-$p_bottom_320: 12px;
-$p_left_320: 25px;
+$header_text_p_top_320: 50px;
+$header_text_p_bottom_320: 50px;
+
+$header_title_size_320: 48px;
+$header_title_mb_320: 20px;
+$header_title_ls_320: 2px;
+
+$header_description_size_320: 18px;
+$header_description_mb_320: 20px;
+$header_description_ls_320: 2px;
+
+$header_version_size_320: 14px;
+$header_version_mb_320: 0px;
+$header_version_ls_320: 2px;
+
+$description_position_left_320: 16%;
+$description_position_top_320: 110%;
 /*--------------------------------------------------------------------------------------------------------------------*/
 
 
 /*Header variables 480*/
 /*--------------------------------------------------------------------------------------------------------------------*/
 $logo_480: "../img/480/header/logo_480.png";
+
 $button_menu_480: "../img/common/header/header_button_menu.png";
+
 $bg_header_480: "../img/480/header/bg_header_480.png";
+$bg_header_width_480: 480px;
+$bg_header_height_480: 402px;
+
 $header_button_menu_480: "../img/480/header/header_button_menu_480.png";
+$header_button_menu_width_480: 26px;
+$header_button_menu_height_480: 21px;
 
 $width_container_navbar_480: 430px;
 $width_container_text_480: 375px;
@@ -54,26 +102,196 @@ $logo_height_480: 41px;
 
 $p_top_header_480: 30px;
 $p_bottom_header_480: 30px;
+
+// btn_buy_480
+$btn_buy_border_radius_480: 20px;
 $btn_buy_color_480: #ffffff;
+$btn_buy_bg_color_480: #8c80ab;
 $btn_buy_font_size_480: 17px;
 $btn_buy_font_weight_480: 700;
-$border-radius_480: 20px;
+$btn_buy_padding_top_480: 15px;
+$btn_buy_padding_right_480: 25px;
+$btn_buy_padding_bottom_480: 15px;
+$btn_buy_padding_left_480: 25px;
 
-$header_text_p_top_480: 100px;
-$header_text_p_bottom_480: 100px;
+// btn_free_480
+$btn_free_border_radius_480: 40px;
+$btn_free_color_480: #ffffff;
+$btn_free_bg_color_480: #8c80ab;
+$btn_free_font_size_480: 21px;
+$btn_free_font_weight_480: 700;
+$btn_free_padding_top_480: 25px;
+$btn_free_padding_right_480: 60px;
+$btn_free_padding_bottom_480: 25px;
+$btn_free_padding_left_480: 60px;
+$btn_free_left_480: 12%;
+$btn_free_top_480: 93%;
 
-$p_top_480: 15px;
-$p_right_480: 25px;
-$p_bottom_480: 15px;
-$p_left_480: 25px;
+$header_text_p_top_480: 50px;
+$header_text_p_bottom_480: 50px;
+
+$header_title_size_480: 54px;
+$header_title_mb_480: 35px;
+$header_title_ls_480: 3px;
+
+$header_description_size_480: 20px;
+$header_description_mb_480: 20px;
+$header_description_ls_480: 2px;
+
+$header_version_size_480: 16px;
+$header_version_mb_480: 0px;
+$header_version_ls_480: 2px;
+
+$description_position_left_480: 27%;
+$description_position_top_480: 115%;
 /*--------------------------------------------------------------------------------------------------------------------*/
 
 
-@mixin bg_image($bg_image) {
+/*Header variables 768*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+$logo_768: "../img/768/header/logo_768.png";
+
+$button_menu_768: "../img/common/header/header_button_menu.png";
+
+$bg_header_768: "../img/768/header/bg_header_768.png";
+$bg_header_width_768: 768px;
+$bg_header_height_768: 423px;
+
+$header_button_menu_768: "../img/768/header/header_button_menu_768.png";
+
+$width_container_navbar_768: 728px;
+$width_container_text_768: 700px;
+
+$logo_width_768: 151px;
+$logo_height_768: 46px;
+
+$p_top_header_768: 30px;
+$p_bottom_header_768: 30px;
+
+// btn_buy_1200
+$btn_buy_border_radius_768: 20px;
+$btn_buy_color_768: #ffffff;
+$btn_buy_bg_color_768: #8c80ab;
+$btn_buy_font_size_768: 16px;
+$btn_buy_font_weight_768: 700;
+$btn_buy_padding_top_768: 10px;
+$btn_buy_padding_right_768: 35px;
+$btn_buy_padding_bottom_768: 10px;
+$btn_buy_padding_left_768: 35px;
+
+// btn_free_1200
+$btn_free_border_radius_768: 40px;
+$btn_free_color_768: #ffffff;
+$btn_free_bg_color_768: #8c80ab;
+$btn_free_font_size_768: 21px;
+$btn_free_font_weight_768: 700;
+$btn_free_padding_top_768: 25px;
+$btn_free_padding_right_768: 65px;
+$btn_free_padding_bottom_768: 25px;
+$btn_free_padding_left_768: 65px;
+$btn_free_left_768: 36%;
+$btn_free_top_768: 93%;
+
+$header_text_p_top_768: 50px;
+$header_text_p_bottom_768: 50px;
+
+$header_title_size_768: 72px;
+$header_title_mb_768: 25px;
+$header_title_ls_768: 5px;
+
+$header_description_size_768: 22px;
+$header_description_mb_768: 20px;
+$header_description_ls_768: 0px;
+
+$header_version_size_768: 14px;
+$header_version_mb_768: 0px;
+$header_version_ls_768: 2px;
+
+$description_position_left_768: 35%;
+$description_position_top_768: 115%;
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+
+/*Header variables 1200*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+$logo_1200: "../img/768/header/logo_1200.png";
+
+$button_menu_1200: "../img/common/header/header_button_menu.png";
+
+$bg_header_1200: "../img/768/header/bg_header_1200.png";
+$bg_header_width_1200: 1380px;
+$bg_header_height_1200: 800px;
+
+$header_button_menu_1200: "../img/1200/header/header_button_menu_1200.png";
+
+$width_container_navbar_1200: 1200px;
+$width_container_text_1200: 585px;
+
+$logo_width_1200: 151px;
+$logo_height_1200: 46px;
+
+$p_top_header_1200: 20px;
+$p_bottom_header_1200: 20px;
+
+// btn_buy_1200
+$btn_buy_border_radius_1200: 20px;
+$btn_buy_color_1200: #ffffff;
+$btn_buy_bg_color_1200: #8c80ab;
+$btn_buy_font_size_1200: 16px;
+$btn_buy_font_weight_1200: 700;
+$btn_buy_padding_top_1200: 15px;
+$btn_buy_padding_right_1200: 35px;
+$btn_buy_padding_bottom_1200: 15px;
+$btn_buy_padding_left_1200: 35px;
+
+// btn_free_1200
+$btn_free_border_radius_1200: 40px;
+$btn_free_color_1200: #ffffff;
+$btn_free_bg_color_1200: #8c80ab;
+$btn_free_font_size_1200: 21px;
+$btn_free_font_weight_1200: 700;
+$btn_free_padding_top_1200: 25px;
+$btn_free_padding_right_1200: 60px;
+$btn_free_padding_bottom_1200: 25px;
+$btn_free_padding_left_1200: 60px;
+$btn_free_left_1200: 26%;
+$btn_free_top_1200: 93%;
+
+$header_text_p_top_1200: 50px;
+$header_text_p_bottom_1200: 50px;
+
+$header_title_size_1200: 82px;
+$header_title_mb_1200: 20px;
+$header_title_ls_1200: 5px;
+
+$header_description_size_1200: 30px;
+$header_description_mb_1200: 20px;
+$header_description_ls_1200: 2px;
+
+$header_version_size_1200: 16px;
+$header_version_mb_1200: 0px;
+$header_version_ls_1200: 2px;
+
+$description_position_left_1200: 35%;
+$description_position_top_1200: 115%;
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+
+/*Section variables 1200*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+
+/*Mixin*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+@mixin bg_image($bg_image, $bg_image_width, $bg_image_height) {
   background: url($bg_image) no-repeat;
+  width: $bg_image_width;
+  height: $bg_image_height;
 }
 
-@mixin bg_image_wh($bg_image, $bg_image_width, $bg_image_height) {
+@mixin bg_image($bg_image, $bg_image_width, $bg_image_height) {
   background: url($bg_image) no-repeat;
   width: $bg_image_width;
   height: $bg_image_height;
@@ -87,12 +305,13 @@ $p_left_480: 25px;
   width: $width;
 }
 
-@mixin btn_style($border-radius) {
+@mixin btn_style($border-radius, $color, $bg_color, $font_size, $font_weight, $padding_top, $padding_right, $padding_bottom, $padding_left) {
   border-radius: $border-radius;
-}
-
-@mixin padding_btn_text($p_top, $p_right, $p_bottom, $p_left) {
-  padding: $p_top $p_right $p_bottom $p_left;
+  color: $color;
+  background-color: $bg_color;
+  font-size: $font_size;
+  font-weight: $font_weight;
+  padding: $padding_top $padding_right $padding_bottom $padding_left;
 }
 
 @mixin padding_top_bottom($p_top, $p_bottom) {
@@ -105,6 +324,30 @@ $p_left_480: 25px;
   font-size: $font_size;
   font-weight: $font_weight;
 }
+
+@mixin header_title_style($header_title_size, $header_title_mb, $header_title_ls) {
+  font-size: $header_title_size;
+  margin-bottom: $header_title_mb;
+  letter-spacing: $header_title_ls;
+}
+
+@mixin header_description_style($header_description_size, $header_description_mb, $header_description_ls) {
+  font-size: $header_description_size;
+  margin-bottom: $header_description_mb;
+  letter-spacing: $header_description_ls;
+}
+
+@mixin header_version_style($header_version_size, $header_version_mb, $header_version_ls) {
+  font-size: $header_version_size;
+  margin-bottom: $header_version_mb;
+  letter-spacing: $header_version_ls;
+}
+
+@mixin position_left_top ($left, $top) {
+  left: $left;
+  top: $top;
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
 
 
 /*Initialization space*/
@@ -135,12 +378,9 @@ body {
   text-transform: capitalize;
 }
 
-.btn {
-  border-radius: 15px;
-  color: #ffffff;
-}
-
-.header__container-navbar, .header__container-text {
+.header__container-navbar,
+.header__container-text,
+.section-revolutionary__container {
   margin: 0 auto;
 }
 /*--------------------------------------------------------------------------------------------------------------------*/
@@ -164,6 +404,23 @@ body {
     background-color: #8c80ab;
   }
 
+  &__navbar-menu {
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 20px;
+  }
+
+  &__navbar-menu-link {
+    text-decoration: none;
+    color: #8d81ac;
+    padding-right: 50px;
+  }
+
+  &__navbar-menu-link:last-child {
+    //padding-right: 0;
+  }
+
   &__text {
     background-color: #000001;
   }
@@ -184,12 +441,42 @@ body {
     font-weight: 400;
   }
 
+  &__bg-image {
+    position: relative;
+  }
+
+  &__bg-image__btn-free {
+    position: absolute;
+  }
+
+  &__bg-image_description {
+    position: absolute;
+    color: #848e97;
+    font-weight: 400;
+  }
+
+}
+
+.section-revolutionary {
+  background-color: #ffffff;
+  text-align: center;
+
+  &__header {
+    color: #635c73;
+    font-weight: 700;
+  }
+
+  &__description {
+    color: #323232;
+    font-weight: 400;
+  }
 }
 
 /*320*/
 /*--------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 320px) {
 
+  // header 'header' 320
   .header {
     &__container-navbar {
       @include container_size($width_container_navbar_320);
@@ -201,20 +488,29 @@ body {
     }
 
     &__navbar-logo {
-      @include bg_image_wh($logo_320, $logo_width_320, $logo_height_320);
+      @include bg_image($logo_320, $logo_width_320, $logo_height_320);
     }
 
     &__navbar-button-buy {
-      @include bg_color(#8c80ab);
-      @include btn_style($border_radius_320);
-      @include font_style($btn_buy_color_320, $btn_buy_font_size_320, $btn_buy_font_weight_320);
-      @include padding_btn_text($p_top_320, $p_right_320, $p_bottom_320, $p_left_320);
+      @include btn_style(
+                      $btn_buy_border_radius_320,
+                      $btn_buy_color_320,
+                      $btn_buy_bg_color_320,
+                      $btn_buy_font_size_320,
+                      $btn_buy_font_weight_320,
+                      $btn_buy_padding_top_320,
+                      $btn_buy_padding_right_320,
+                      $btn_buy_padding_bottom_320,
+                      $btn_buy_padding_left_320
+      );
     }
 
     &__navbar-button-menu {
-      @include bg_image($header_button_menu_320);
-      width: 26px;
-      height: 21px;
+      @include bg_image($header_button_menu_320, $header_button_menu_width_320, $header_button_menu_height_320);
+    }
+
+    &__navbar-menu {
+      display: none;
     }
 
     &__container-text {
@@ -226,25 +522,62 @@ body {
     }
 
     &__title {
-      font-size: 48px;
-      margin-bottom: 20px;
+      @include header_title_style($header_title_size_320, $header_title_mb_320, $header_title_ls_320);
     }
 
     &__description {
-      font-size: 18px;
-      margin-bottom: 20px;
+      @include header_description_style($header_description_size_320, $header_description_mb_320, $header_description_ls_320);
     }
 
     &__version {
-      font-size: 14px;
+      @include header_version_style($header_version_size_320, $header_version_mb_320, $header_version_ls_320);
     }
 
     &__bg-image {
-      @include bg_image_wh($bg_header_320, 320px, 378px);
+      @include bg_image($bg_header_320, 320px, 378px);
+    }
+
+    &__bg-image__btn-free {
+      @include btn_style(
+                      $btn_free_border_radius_320,
+                      $btn_free_color_320,
+                      $btn_free_bg_color_320,
+                      $btn_free_font_size_320,
+                      $btn_free_font_weight_320,
+                      $btn_free_padding_top_320,
+                      $btn_free_padding_right_320,
+                      $btn_free_padding_bottom_320,
+                      $btn_free_padding_left_320
+      );
+      left: $btn_free_left_320;
+      top: $btn_free_top_320;
+    }
+
+    &__bg-image_description {
+      @include position_left_top($description_position_left_320, $description_position_top_320);
     }
 
   }
 
+  // section 'section__revolutionary' 320
+  .section-revolutionary {
+    margin-top: 120px;
+    margin-bottom: 90px;
+    &__container {
+      width: 265px;
+    }
+
+    &__header {
+      line-height: 40px;
+      font-size: 25px;
+      padding-bottom: 25px;
+    }
+
+    &__description {
+      line-height: 20px;
+      font-size: 14px;
+    }
+  }
 }
 
 
@@ -263,20 +596,29 @@ body {
     }
 
     &__navbar-logo {
-      @include bg_image_wh($logo_480, $logo_width_480, $logo_height_480);
+      @include bg_image($logo_480, $logo_width_480, $logo_height_480);
     }
 
     &__navbar-button-buy {
-      @include bg_color(#8c80ab);
-      @include btn_style($border-radius_480);
-      @include font_style($btn_buy_color_480, $btn_buy_font_size_480, $btn_buy_font_weight_480);
-      @include padding_btn_text($p_top_480, $p_right_480, $p_bottom_480, $p_left_480);
+      @include btn_style(
+                      $btn_buy_border_radius_480,
+                      $btn_buy_color_480,
+                      $btn_buy_bg_color_480,
+                      $btn_buy_font_size_480,
+                      $btn_buy_font_weight_480,
+                      $btn_buy_padding_top_480,
+                      $btn_buy_padding_right_480,
+                      $btn_buy_padding_bottom_480,
+                      $btn_buy_padding_left_480
+      );
     }
 
     &__navbar-button-menu {
-      @include bg_image($header_button_menu_480);
-      width: 26px;
-      height: 21px;
+      @include bg_image($header_button_menu_480, $header_button_menu_width_480, $header_button_menu_height_480);
+    }
+
+    &__navbar-menu {
+      display: none;
     }
 
     &__container-text {
@@ -288,21 +630,279 @@ body {
     }
 
     &__title {
-      font-size: 54px;
-      margin-bottom: 35px;
+      @include header_title_style($header_title_size_480, $header_title_mb_480, $header_title_ls_480);
     }
 
     &__description {
-      font-size: 20px;
-      margin-bottom: 35px;
+      @include header_description_style($header_description_size_480, $header_description_mb_480, $header_description_ls_480);
     }
 
     &__version {
-      font-size: 16px;
+      @include header_version_style($header_version_size_480, $header_version_mb_480, $header_version_ls_480);
     }
 
     &__bg-image {
-      @include bg_image_wh($bg_header_480, 480px, 402px);
+      @include bg_image($bg_header_480, $bg_header_width_480, $bg_header_height_480);
+    }
+
+    &__bg-image__btn-free {
+      @include btn_style(
+                      $btn_free_border_radius_480,
+                      $btn_free_color_480,
+                      $btn_free_bg_color_480,
+                      $btn_free_font_size_480,
+                      $btn_free_font_weight_480,
+                      $btn_free_padding_top_480,
+                      $btn_free_padding_right_480,
+                      $btn_free_padding_bottom_480,
+                      $btn_free_padding_left_480
+      );
+      left: $btn_free_left_480;
+      top: $btn_free_top_480;
+    }
+
+    &__bg-image_description {
+      @include position_left_top($description_position_left_480, $description_position_top_480);
+    }
+
+  }
+
+  // section 'section__revolutionary' 480
+  .section-revolutionary {
+    margin-top: 135px;
+    margin-bottom: 80px;
+
+    &__container {
+      width: 450px;
+    }
+
+    &__header {
+      line-height: 50px;
+      font-size: 42px;
+      padding-bottom: 55px;
+    }
+
+    &__description {
+      line-height: 30px;
+      font-size: 16px;
+    }
+
+  }
+
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+
+/*768*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 768px) and (min-width: 481px) {
+
+  .header {
+    &__container-navbar {
+      @include container_size($width_container_navbar_768);
+    }
+
+    &__navbar {
+      @include padding_top_bottom($p_top_header_768, $p_bottom_header_768);
+      justify-content: space-between;
+    }
+
+    &__navbar-logo {
+      @include bg_image($logo_768, $logo_width_768, $logo_height_768);
+    }
+
+    &__navbar-button-buy {
+      @include btn_style(
+                      $btn_buy_border_radius_768,
+                      $btn_buy_color_768,
+                      $btn_buy_bg_color_768,
+                      $btn_buy_font_size_768,
+                      $btn_buy_font_weight_768,
+                      $btn_buy_padding_top_768,
+                      $btn_buy_padding_right_768,
+                      $btn_buy_padding_bottom_768,
+                      $btn_buy_padding_left_768
+      );
+    }
+
+    &__navbar-button-menu {
+      display: none;
+    }
+
+    &__navbar-menu {
+    }
+
+    &__container-text {
+      @include container_size($width_container_text_768);
+    }
+
+    &__text {
+      @include padding_top_bottom($header_text_p_top_768, $header_text_p_bottom_768);
+    }
+
+    &__title {
+      @include header_title_style($header_title_size_768, $header_title_mb_768, $header_title_ls_768);
+    }
+
+    &__description {
+      @include header_description_style($header_description_size_768, $header_description_mb_768, $header_description_ls_768);
+    }
+
+    &__version {
+      @include header_version_style($header_version_size_768, $header_version_mb_768, $header_version_ls_768);
+    }
+
+    &__bg-image {
+      @include bg_image($bg_header_768, $bg_header_width_768, $bg_header_height_768);
+    }
+
+    &__bg-image__btn-free {
+      @include btn_style(
+                      $btn_free_border_radius_768,
+                      $btn_free_color_768,
+                      $btn_free_bg_color_768,
+                      $btn_free_font_size_768,
+                      $btn_free_font_weight_768,
+                      $btn_free_padding_top_768,
+                      $btn_free_padding_right_768,
+                      $btn_free_padding_bottom_768,
+                      $btn_free_padding_left_768
+      );
+      @include position_left_top($btn_free_left_768, $btn_free_top_768);
+    }
+
+    &__bg-image_description {
+      @include position_left_top($description_position_left_768, $description_position_top_768);
+    }
+
+  }
+
+  // section 'section__revolutionary' 768
+  .section-revolutionary {
+    margin-top: 155px;
+    margin-bottom: 100px;
+
+    &__container {
+      width: 665px;
+    }
+
+    &__header {
+      font-size: 42px;
+      padding-bottom: 40px;
+    }
+
+    &__description {
+      line-height: 30px;
+      font-size: 20px;
+    }
+
+  }
+
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+
+/*768*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 1200px) and (min-width: 769px) {
+
+  .header {
+    &__container-navbar {
+      @include container_size($width_container_navbar_1200);
+    }
+
+    &__navbar {
+      @include padding_top_bottom($p_top_header_768, $p_bottom_header_1200);
+      justify-content: space-between;
+    }
+
+    &__navbar-logo {
+      @include bg_image($logo_1200, $logo_width_1200, $logo_height_1200);
+    }
+
+    &__navbar-button-buy {
+      @include btn_style(
+                      $btn_buy_border_radius_1200,
+                      $btn_buy_color_1200,
+                      $btn_buy_bg_color_1200,
+                      $btn_buy_font_size_1200,
+                      $btn_buy_font_weight_1200,
+                      $btn_buy_padding_top_1200,
+                      $btn_buy_padding_right_1200,
+                      $btn_buy_padding_bottom_1200,
+                      $btn_buy_padding_left_1200
+      );
+    }
+
+    &__navbar-button-menu {
+      display: none;
+    }
+
+    &__navbar-menu {
+    }
+
+    &__container-text {
+      @include container_size($width_container_text_1200);
+    }
+
+    &__text {
+      @include padding_top_bottom($header_text_p_top_1200, $header_text_p_bottom_1200);
+    }
+
+    &__title {
+      @include header_title_style($header_title_size_1200, $header_title_mb_1200, $header_title_ls_1200);
+    }
+
+    &__description {
+      @include header_description_style($header_description_size_1200, $header_description_mb_1200, $header_description_ls_1200);
+    }
+
+    &__version {
+      @include header_version_style($header_version_size_1200, $header_version_mb_1200, $header_version_ls_1200);
+    }
+
+    &__bg-image {
+      @include bg_image($bg_header_1200, $bg_header_width_1200, $bg_header_height_1200);
+    }
+
+    &__bg-image__btn-free {
+      @include btn_style(
+                      $btn_free_border_radius_1200,
+                      $btn_free_color_1200,
+                      $btn_free_bg_color_1200,
+                      $btn_free_font_size_1200,
+                      $btn_free_font_weight_1200,
+                      $btn_free_padding_top_1200,
+                      $btn_free_padding_right_1200,
+                      $btn_free_padding_bottom_1200,
+                      $btn_free_padding_left_1200
+      );
+      @include position_left_top($btn_free_left_1200, $btn_free_top_1200);
+    }
+
+    &__bg-image_description {
+      @include position_left_top($description_position_left_1200, $description_position_top_1200);
+    }
+
+  }
+
+  // section 'section__revolutionary' 1200
+  .section-revolutionary {
+    margin-top: 155px;
+    margin-bottom: 100px;
+
+    &__container {
+      width: 665px;
+    }
+
+    &__header {
+      font-size: 42px;
+      padding-bottom: 40px;
+    }
+
+    &__description {
+      line-height: 30px;
+      font-size: 20px;
     }
 
   }
@@ -318,59 +918,3 @@ body {
   src: url(../fonts/Montserrat-Regular.ttf);
 }
 /*--------------------------------------------------------------------------------------------------------------------*/
-
-
-//$blue: #3bbfce; // переменная
-//$radius: 15px;
-//
-//@mixin table-base { // добавляет куски кода
-//  th {
-//    text-align: center;
-//  }
-//  td, th {
-//    padding: 2px;
-//  }
-//}
-//
-//.color {
-//  color: yellow;
-//}
-//
-//@mixin border-radius($radius) {
-//  -webkit-border-radius: $radius;
-//  -moz-border-radius: $radius;
-//  -ms-border-radius: $radius;
-//  border-radius: $radius;
-//}
-//
-//.box-1 {
-//  @include border-radius($radius)
-//}
-//
-//#data {
-//  @include table-base
-//}
-//
-//.btn {
-//  width: 100%;
-//  height: 100%;
-//  background-color: green;
-//  border: 1px solid $blue;
-//  @extend .color;
-//  padding: 20px 10px;
-//
-//  ul {
-//    padding: 0;
-//    @extend .color;
-//    li {
-//      margin-left: 100px;
-//      margin-top: 100px;
-//      @extend .color; // добавляет свойство
-//    }
-//  }
-//}
-//
-//* {
-//  background-color: red;
-//}
-//
