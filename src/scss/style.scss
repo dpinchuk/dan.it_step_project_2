@@ -54,7 +54,34 @@ body {
 
 /*Include sprites*/
 /*--------------------------------------------------------------------------------------------------------------------*/
-.sprite {
+.sprite_section_revolutionary {
+  background-image: url(../img/common/section-revolutionary/sprites/section_revolutionary_sprite.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: text-bottom;
+  margin-left: 10px
+}
+
+.sprite-icon_eye {
+  width: 16px;
+  height: 16px;
+  background-position: -5px -5px;
+}
+
+.sprite-icon_github {
+  width: 16px;
+  height: 16px;
+  background-position: -31px -5px;
+}
+
+.sprite-icon_star {
+  width: 16px;
+  height: 16px;
+  background-position: -5px -31px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+.sprite_section_features {
   background-image: url(../img/common/section-features/sprites/section_features_sprite.png);
   background-repeat: no-repeat;
   display: block;

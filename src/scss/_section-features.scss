@@ -108,9 +108,8 @@ $bg_image_height_1200: 519px;
 /*--------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 320px) {
   .section-features {
-    margin-bottom: 90px;
 
-    .sprite {
+    .sprite_section_features {
       display: inline-block;
     }
 
@@ -131,7 +130,7 @@ $bg_image_height_1200: 519px;
           font-size: 16px;
           padding-top: 30px;
           padding-bottom: 20px;
-          letter-spacing: 0px;
+          letter-spacing: 0;
           line-height: 15px;
         }
 
@@ -156,7 +155,6 @@ $bg_image_height_1200: 519px;
 /*--------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 480px) and (min-width: 321px) {
   .section-features {
-    margin-bottom: 90px;
 
     &__container {
       width: $section_features_container_480;
@@ -212,7 +210,6 @@ $bg_image_height_1200: 519px;
 /*--------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 768px) and (min-width: 481px) {
   .section-features {
-    margin-bottom: 100px;
 
     &__container {
       width: $section_features_container_768;
@@ -268,7 +265,6 @@ $bg_image_height_1200: 519px;
 /*--------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 1200px) and (min-width: 769px) {
   .section-features {
-    margin-bottom: 100px;
     height: -webkit-fill-available;
 
     &__container {
