@@ -18,6 +18,12 @@ body {
   clear: both;
 }
 
+.container {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+}
+
 .text-uppercase {
   text-transform: uppercase;
 }
@@ -28,7 +34,6 @@ body {
 
 .header__container-navbar,
 .header__container-text,
-.section-revolutionary__container,
 .section-features__container {
   margin: 0 auto;
 }
@@ -59,7 +64,6 @@ body {
   background-repeat: no-repeat;
   display: inline-block;
   vertical-align: middle;
-  margin-left: 10px
 
 }
 
