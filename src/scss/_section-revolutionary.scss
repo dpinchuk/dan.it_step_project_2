@@ -56,14 +56,15 @@
     height: 25px;
     border: 1px solid #d6d6d6;
     border-radius: 5px;
+    padding-top: 2px;
 
     &__text {
       text-align: left;
       &-item {
         display: inline-block;
-        vertical-align: text-bottom;
         font-size: 12px;
         font-weight: 700;
+        vertical-align: middle;
       }
     }
 
