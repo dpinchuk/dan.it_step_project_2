@@ -40,6 +40,10 @@
 
   &__list {
 
+    &-item:first-child {
+      padding-top: 0;
+    }
+
     &-item {
       padding-top: 35px;
       &__title {
