@@ -39,11 +39,12 @@
   padding-bottom: 50px;
   text-align: center;
 
-  &__header {
-    color: #323232;
-    font-size: 24px;
+  &__header,
+  &__header_768_1200 {
+    //color: #323232;
+    //font-size: 24px;
     font-weight: 900;
-    line-height: 34px;
+    //line-height: 34px;
     padding-bottom: 40px;
   }
 
@@ -56,7 +57,8 @@
 
     }
 
-    &-subscribe {
+    &-subscribe,
+    &-subscribe_768_1200 {
       background-color: #8d81ac;
       color: #ffffff;
       font-size: 13px;
@@ -88,6 +90,16 @@
     width: 290px;
   }
   .section-callback {
+    &__header_768_1200 {
+      display: none;
+    }
+
+    &__header {
+      color:  #323232;
+      font-size: 24px;
+      line-height: 34px;
+    }
+
     &__form {
       text-align: -webkit-center;
       &-name {
@@ -104,6 +116,11 @@
       &-subscribe {
         display: block;
       }
+
+      &-subscribe_768_1200 {
+        display: none;
+      }
+
     }
   }
 }
@@ -118,6 +135,16 @@
   }
 
   .section-callback {
+    &__header_768_1200 {
+      display: none;
+    }
+
+    &__header {
+      color: #323232;
+      font-size: 28px;
+      line-height: 60px;
+    }
+
     &__form {
       text-align: -webkit-center;
       &-name {
@@ -132,6 +159,10 @@
 
       &-subscribe {
         display: block;
+      }
+
+      &-subscribe_768_1200 {
+        display: none;
       }
     }
 
@@ -148,6 +179,17 @@
   }
 
   .section-callback {
+    &__header_768_1200 {
+      color: #635c73;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 60px;
+    }
+
+    &__header {
+      display: none;
+    }
+
     &__form {
       text-align: center;
       display: flex;
@@ -161,6 +203,10 @@
       }
 
       &-subscribe {
+        display: none;
+      }
+
+      &-subscribe_768_1200 {
         margin-top: 25px;
         display: block;
       }
@@ -178,6 +224,20 @@
   }
 
   .section-callback {
+    &__header_768_1200 {
+      color: #635c73;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 40px;
+      display: inline-block;
+      float: left;
+      margin-right: 140px;
+    }
+
+    &__header {
+      display: none;
+    }
+
     &__form {
       display: flex;
       flex-wrap: wrap;
@@ -190,6 +250,11 @@
       }
 
       &-subscribe {
+        display: none;
+      }
+
+      &-subscribe_768_1200 {
+        //margin-top: 25px;
         display: block;
       }
     }
