@@ -52,30 +52,24 @@
   &__features {
     text-align: -webkit-center;
 
-    &-item:hover {
-      -webkit-filter: brightness(150%);
-      -webkit-transform: scale(1.1);
-      background-color: #000000;
-      opacity: .75;
-
-      &__header {
-        background-color: #000000;
-        opacity: .75;
-      }
-    }
-
     &-item {
+
+      &:nth-child(3) {
+        max-width: 310px;
+      }
+
       position: relative;
       padding-bottom: 55px;
       max-width: 260px;
       text-align: center;
       display: block;
       cursor: auto;
-      //transition: all 3s ease;
+      opacity: .9;
 
       &__header {
         padding: 30px 35px;
         color: #ff3919;
+        font-size: 24px;
         font-weight: 400;
         background-color: #665769;
       }
@@ -122,8 +116,11 @@
           font-size: 16px;
           font-weight: 400;
           line-height: 5px;
-          top: 65%;
+          top: 60%;
           left: 10%;
+          &:nth-child(3) {
+            left: 15%;
+          }
 
           &-item {
             padding-bottom: 20px;
@@ -223,7 +220,10 @@
 
         &__content {
           &-price {
+          }
 
+          &-license {
+            top: 65%;
           }
         }
 
