@@ -51,6 +51,7 @@ body {
 @import "section-revolutionary";
 @import "section-features";
 @import "section-testimonials";
+@import "section-pricing";
 @import "section-callback";
 @import "footer";
 /*--------------------------------------------------------------------------------------------------------------------*/
@@ -66,6 +67,11 @@ body {
 @font-face {
   font-family: Lato, sans-serif;
   src: url(../fonts/Lato-SemiboldItalic.ttf);
+}
+
+@font-face {
+  font-family: LatoReg, sans-serif;
+  src: url(../fonts/Lato-Regular.ttf);
 }
 /*--------------------------------------------------------------------------------------------------------------------*/
 
