@@ -103,6 +103,7 @@
         }
 
         &-license {
+          width: 210px;
           position: absolute;
           color: #ffffff;
           font-size: 16px;
@@ -110,10 +111,11 @@
           line-height: 5px;
           //text-align: center;
           top: 65%;
-          left: 25%;
+          left: 10%;
 
           &-item {
             padding-bottom: 20px;
+            text-align: center;
           }
           
           &-item:last-child {
