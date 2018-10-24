@@ -99,29 +99,26 @@
           border: 3px solid #8d81ac;
           background-color: #8d81ac;
           width: 60px;
-          margin-bottom: 110px;
+          margin-bottom: 130px;
         }
 
-        &-license1 {
+        &-license {
           position: absolute;
           color: #ffffff;
           font-size: 16px;
           font-weight: 400;
           line-height: 5px;
-          //padding-bottom: 20px;
+          //text-align: center;
           top: 65%;
           left: 25%;
-        }
 
-        &-license2 {
-          position: absolute;
-          color: #ffffff;
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 5px;
-          //padding-bottom: 20px;
-          top: 70%;
-          left: 27%;
+          &-item {
+            padding-bottom: 20px;
+          }
+          
+          &-item:last-child {
+            padding-bottom: 0;
+          }
         }
 
         &-btn {
