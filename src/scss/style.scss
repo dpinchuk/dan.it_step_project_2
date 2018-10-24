@@ -50,6 +50,7 @@ body {
 @import "header";
 @import "section-revolutionary";
 @import "section-features";
+@import "section-testimonials";
 @import "section-callback";
 @import "footer";
 /*--------------------------------------------------------------------------------------------------------------------*/
@@ -61,11 +62,16 @@ body {
   font-family: Montserrat, sans-serif;
   src: url(../fonts/Montserrat-Regular.ttf);
 }
+
+@font-face {
+  font-family: Lato, sans-serif;
+  src: url(../fonts/Lato-SemiboldItalic.ttf);
+}
 /*--------------------------------------------------------------------------------------------------------------------*/
 
 /*Include sprites*/
 /*--------------------------------------------------------------------------------------------------------------------*/
-.sprite_section_revolutionary {
+.sprite-section-revolutionary {
   background-image: url(../img/common/section-revolutionary/sprites/section_revolutionary_sprite.png);
   background-repeat: no-repeat;
   display: inline-block;
@@ -73,52 +79,94 @@ body {
 
 }
 
-.sprite-icon_eye {
+.sprite-icon-eye {
   width: 16px;
   height: 16px;
   background-position: -5px -5px;
 }
 
-.sprite-icon_github {
+.sprite-icon-github {
   width: 16px;
   height: 16px;
   background-position: -31px -5px;
 }
 
-.sprite-icon_star {
+.sprite-icon-star {
   width: 16px;
   height: 16px;
   background-position: -5px -31px;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------*/
-.sprite_section_features {
+.sprite-section-features {
   background-image: url(../img/common/section-features/sprites/section_features_sprite.png);
   background-repeat: no-repeat;
   display: block;
 }
 
-.sprite-icon_features_better {
+.sprite-icon-features-better {
   width: 71px;
   height: 71px;
   background-position: -5px -5px;
 }
 
-.sprite-icon_features_stuff {
+.sprite-icon-features-stuff {
   width: 60px;
   height: 84px;
   background-position: -86px -5px;
 }
 
-.sprite-icon_features_tool {
+.sprite-icon-features-tool {
   width: 90px;
   height: 80px;
   background-position: -156px -5px;
 }
 
-.sprite-icon_features_web {
+.sprite-icon-features-web {
   width: 111px;
   height: 64px;
   background-position: -156px -95px;
 }
+
 /*--------------------------------------------------------------------------------------------------------------------*/
+.sprite-section-testimonials {
+  background-image: url(../img/common/section-testimonials/sprites/section_testimonials_sprite.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.sprite-logo-bloq {
+  width: 166px;
+  height: 34px;
+  background-position: -5px -5px;
+}
+
+.sprite-logo-buddha {
+  width: 225px;
+  height: 24px;
+  background-position: -5px -49px;
+}
+
+.sprite-logo-codrops {
+  width: 148px;
+  height: 50px;
+  background-position: -5px -83px;
+}
+
+.sprite-logo-smashing {
+  width: 165px;
+  height: 43px;
+  background-position: -5px -143px;
+}
+
+.sprite-logo-tnw {
+  width: 108px;
+  height: 34px;
+  background-position: -181px -5px;
+}
+
+.sprite-logo-w {
+  width: 64px;
+  height: 64px;
+  background-position: -240px -49px;
+}
