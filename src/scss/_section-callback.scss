@@ -235,15 +235,11 @@
     }
 
     &__items {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      display: block;
     }
 
     &__form {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      display: -webkit-inline-box;
 
       &-name {
       }
