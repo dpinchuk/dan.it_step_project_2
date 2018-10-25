@@ -449,7 +449,7 @@ $description_position_top_1200: 115%;
 
 /*320*/
 /*--------------------------------------------------------------------------------------------------------------------*/
-@media only screen and (max-width: 400px) and (min-width: 320px) {
+@media only screen and (max-width: 400px) and (min-width: 0px) {
 
   // header 'header' 320
   .header {
@@ -743,7 +743,7 @@ $description_position_top_1200: 115%;
 
 /*1200*/
 /*--------------------------------------------------------------------------------------------------------------------*/
-@media only screen and (max-width: 1200px) and (min-width: 993px) {
+@media only screen and (max-width: 2000px) and (min-width: 993px) {
 
   .header {
     &__container-navbar {

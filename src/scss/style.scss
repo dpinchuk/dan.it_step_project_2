@@ -20,9 +20,23 @@ body {
 }
 
 .container {
-  min-width: 320px;
+  width: 100%;
+  margin: 0 auto;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 993px) {
+  .container {
+    width: 1200px;
+    min-width: 320px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+  }
+}
+
+.container-image {
   margin: 0 auto;
 }
 
