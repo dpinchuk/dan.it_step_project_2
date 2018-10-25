@@ -228,11 +228,16 @@
       line-height: 40px;
       display: inline-block;
       float: left;
-      margin-right: 140px;
     }
 
     &__header {
       display: none;
+    }
+
+    &__items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
 
     &__form {

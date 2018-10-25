@@ -211,6 +211,7 @@ $description_position_top_768: 115%;
 /*Header variables 1200*/
 /*--------------------------------------------------------------------------------------------------------------------*/
 $logo_1200: "../img/1200/header/logo_1200.png";
+$logo_1200_hover: "../img/common/header/logo_hover.png";
 
 $button_menu_1200: "../img/common/header/header_button_menu.png";
 
@@ -368,6 +369,10 @@ $description_position_top_1200: 115%;
     //padding-right: 0;
   }
 
+  &__navbar-menu-link:hover {
+    color: #ffffff;
+  }
+
   &__navbar-menu_768 {
     display: none;
   }
@@ -404,6 +409,12 @@ $description_position_top_1200: 115%;
     position: absolute;
   }
 
+  &__bg-image__btn-free:hover {
+    background-color: #ffffff;
+    color: #8c80ab;
+    border: 1px solid #8c80ab;
+  }
+
   &__bg-image_description {
     position: absolute;
     color: #848e97;
@@ -429,10 +440,18 @@ $description_position_top_1200: 115%;
     }
 
     &__navbar-logo {
+      &:hover {
+        color: #ffffff;
+      }
+
       @include bg_image($logo_320, $logo_width_320, $logo_height_320);
     }
 
     &__navbar-button-buy {
+      &:hover {
+
+      }
+
       @include btn_style(
                       $btn_buy_border_radius_320,
                       $btn_buy_color_320,
@@ -671,7 +690,7 @@ $description_position_top_1200: 115%;
 /*--------------------------------------------------------------------------------------------------------------------*/
 
 
-/*768*/
+/*1200*/
 /*--------------------------------------------------------------------------------------------------------------------*/
 @media only screen and (max-width: 1200px) and (min-width: 993px) {
 
@@ -686,10 +705,21 @@ $description_position_top_1200: 115%;
     }
 
     &__navbar-logo {
+      &:hover {
+        color: #ffffff;
+        @include bg_image($logo_1200_hover, $logo_width_1200, $logo_height_1200);
+      }
       @include bg_image($logo_1200, $logo_width_1200, $logo_height_1200);
     }
 
     &__navbar-button-buy {
+      cursor: pointer;
+
+      &:hover {
+        background-color: #ffffff;
+        color: #8c80ab;
+      }
+
       @include btn_style(
                       $btn_buy_border_radius_1200,
                       $btn_buy_color_1200,
@@ -746,6 +776,7 @@ $description_position_top_1200: 115%;
     }
 
     &__bg-image__btn-free {
+
       @include btn_style(
                       $btn_free_border_radius_1200,
                       $btn_free_color_1200,
