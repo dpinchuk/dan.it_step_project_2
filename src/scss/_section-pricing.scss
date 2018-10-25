@@ -248,6 +248,7 @@
     }
 
     &__features {
+
       &-item {
         &__header {
           font-size: 24px;
@@ -301,6 +302,11 @@
       flex-wrap: wrap;
       justify-content: space-between;
 
+      &-item3 {
+        margin-top: 55px;
+        width: 300px;
+      }
+
       &-item {
         width: 260px;
         padding-top: 90px;
@@ -343,6 +349,11 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
+
+      &-item3 {
+        margin-top: 5px;
+        width: 300px;
+      }
 
       &-item {
         width: 260px;
