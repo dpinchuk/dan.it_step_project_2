@@ -55,6 +55,11 @@
     &-item {
 
       &:nth-child(3) {
+
+        &__header {
+          background-color: red;
+        }
+
         max-width: 310px;
       }
 
@@ -133,6 +138,12 @@
         }
 
         &-btn {
+          &:hover {
+            cursor: pointer;
+            background-color: #ffffff;
+            color: #8c80ab;
+          }
+
           background-color: #746778;
           text-decoration: none;
           margin-bottom: 40px;

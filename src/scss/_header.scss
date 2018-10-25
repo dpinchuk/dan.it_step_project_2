@@ -12,6 +12,7 @@ $bg_color_nav: #262627;
 /*Header variables 320*/
 /*--------------------------------------------------------------------------------------------------------------------*/
 $logo_320: "../img/320/header/logo_320.png";
+$logo_320_hover: "../img/320/header/logo_320_hover.png";
 
 $button_menu_320: "../img/common/header/header_button_menu.png";
 
@@ -79,6 +80,7 @@ $description_position_top_320: 110%;
 /*Header variables 480*/
 /*--------------------------------------------------------------------------------------------------------------------*/
 $logo_480: "../img/480/header/logo_480.png";
+$logo_480_hover: "../img/480/header/logo_480_hover.png";
 
 $button_menu_480: "../img/common/header/header_button_menu.png";
 
@@ -146,6 +148,7 @@ $description_position_top_480: 115%;
 /*Header variables 768*/
 /*--------------------------------------------------------------------------------------------------------------------*/
 $logo_768: "../img/768/header/logo_768.png";
+$logo_768_hover: "../img/768/header/logo_768_hover.png";
 
 $button_menu_768: "../img/common/header/header_button_menu.png";
 
@@ -211,7 +214,7 @@ $description_position_top_768: 115%;
 /*Header variables 1200*/
 /*--------------------------------------------------------------------------------------------------------------------*/
 $logo_1200: "../img/1200/header/logo_1200.png";
-$logo_1200_hover: "../img/common/header/logo_hover.png";
+$logo_1200_hover: "../img/1200/header/logo_1200_hover.png";
 
 $button_menu_1200: "../img/common/header/header_button_menu.png";
 
@@ -356,6 +359,12 @@ $description_position_top_1200: 115%;
   }
 
   &__navbar-button-buy {
+    &:hover {
+      cursor: pointer;
+      background-color: #ffffff;
+      color: #8c80ab;
+    }
+
     background-color: #8c80ab;
   }
 
@@ -410,6 +419,7 @@ $description_position_top_1200: 115%;
   }
 
   &__bg-image__btn-free:hover {
+    cursor: pointer;
     background-color: #ffffff;
     color: #8c80ab;
     border: 1px solid #8c80ab;
@@ -441,7 +451,7 @@ $description_position_top_1200: 115%;
 
     &__navbar-logo {
       &:hover {
-        color: #ffffff;
+        @include bg_image($logo_320_hover, $logo_width_320, $logo_height_320);
       }
 
       @include bg_image($logo_320, $logo_width_320, $logo_height_320);
@@ -531,6 +541,10 @@ $description_position_top_1200: 115%;
     }
 
     &__navbar-logo {
+      &:hover {
+        @include bg_image($logo_480_hover, $logo_width_480, $logo_height_480);
+      }
+
       @include bg_image($logo_480, $logo_width_480, $logo_height_480);
     }
 
@@ -615,6 +629,10 @@ $description_position_top_1200: 115%;
     }
 
     &__navbar-logo {
+      &:hover {
+        @include bg_image($logo_768_hover, $logo_width_768, $logo_height_768);
+      }
+
       @include bg_image($logo_768, $logo_width_768, $logo_height_768);
     }
 
@@ -706,7 +724,6 @@ $description_position_top_1200: 115%;
 
     &__navbar-logo {
       &:hover {
-        color: #ffffff;
         @include bg_image($logo_1200_hover, $logo_width_1200, $logo_height_1200);
       }
       @include bg_image($logo_1200, $logo_width_1200, $logo_height_1200);

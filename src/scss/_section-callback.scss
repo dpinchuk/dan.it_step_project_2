@@ -46,16 +46,23 @@
   }
 
   &__form {
+    outline: none;
     &-name {
-
+      outline: none;
     }
 
     &-phone {
-
+      outline: none;
     }
 
     &-subscribe,
     &-subscribe_768_1200 {
+      &:hover {
+        cursor: pointer;
+        background-color: #ffffff;
+        color: #8d81ac;
+      }
+
       background-color: #8d81ac;
       color: #ffffff;
       font-size: 13px;
