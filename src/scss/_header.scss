@@ -346,9 +346,9 @@ $description_position_top_1200: 115%;
 
 /*Header 'header'*/
 /*--------------------------------------------------------------------------------------------------------------------*/
-.active .header__navbar-nav-menu {
-  right: 0;
-}
+//.active .header__navbar-nav-menu {
+//  right: 0;
+//}
 
 .header {
   @include bg_color($bg_color_nav);
@@ -378,9 +378,8 @@ $description_position_top_1200: 115%;
       }
 
       &-menu {
-        position: absolute;
-        right: -200px;
-        transition: all 0.4s linear;
+        //position: relative;
+        //margin-top: 10px;
       }
     }
 
@@ -490,6 +489,10 @@ $description_position_top_1200: 115%;
     }
 
     &__navbar-nav {
+      &-button {
+        float: right;
+      }
+
       &-menu {
 
       }
@@ -583,6 +586,10 @@ $description_position_top_1200: 115%;
     }
 
     &__navbar-nav {
+      &-button {
+        float: right;
+      }
+
       &-menu {
 
       }
