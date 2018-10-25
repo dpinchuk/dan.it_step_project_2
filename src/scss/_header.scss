@@ -346,6 +346,10 @@ $description_position_top_1200: 115%;
 
 /*Header 'header'*/
 /*--------------------------------------------------------------------------------------------------------------------*/
+.active .header__navbar-nav-menu {
+  right: 0;
+}
+
 .header {
   @include bg_color($bg_color_nav);
   background-repeat: no-repeat;
@@ -356,30 +360,40 @@ $description_position_top_1200: 115%;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-  }
 
-  &__navbar-button-buy {
-    &:hover {
-      cursor: pointer;
-      background-color: #ffffff;
-      color: #8c80ab;
+    &-button-buy {
+      &:hover {
+        cursor: pointer;
+        background-color: #ffffff;
+        color: #8c80ab;
+      }
+      background-color: #8c80ab;
     }
 
-    background-color: #8c80ab;
+    &-nav {
+      //position: relative;
+
+      &-button {
+        position: relative;
+      }
+
+      &-menu {
+        position: absolute;
+        right: -200px;
+        transition: all 0.4s linear;
+      }
+    }
+
   }
 
   &__navbar-menu-link {
+    &:hover {
+      color: #ffffff;
+    }
+
     text-decoration: none;
     color: #8d81ac;
     padding-right: 50px;
-  }
-
-  &__navbar-menu-link:last-child {
-    //padding-right: 0;
-  }
-
-  &__navbar-menu-link:hover {
-    color: #ffffff;
   }
 
   &__navbar-menu_768 {
@@ -475,8 +489,14 @@ $description_position_top_1200: 115%;
       );
     }
 
-    &__navbar-button-menu {
-      @include bg_image($header_button_menu_320, $header_button_menu_width_320, $header_button_menu_height_320);
+    &__navbar-nav {
+      &-menu {
+
+      }
+
+      &-button {
+        @include bg_image($header_button_menu_320, $header_button_menu_width_320, $header_button_menu_height_320);
+      }
     }
 
     &__container-text {
@@ -562,8 +582,14 @@ $description_position_top_1200: 115%;
       );
     }
 
-    &__navbar-button-menu {
-      @include bg_image($header_button_menu_480, $header_button_menu_width_480, $header_button_menu_height_480);
+    &__navbar-nav {
+      &-menu {
+
+      }
+
+      &-button {
+        @include bg_image($header_button_menu_480, $header_button_menu_width_480, $header_button_menu_height_480);
+      }
     }
 
     &__container-text {
@@ -650,7 +676,7 @@ $description_position_top_1200: 115%;
       );
     }
 
-    &__navbar-button-menu {
+    &__navbar-nav {
       display: none;
     }
 
@@ -750,7 +776,7 @@ $description_position_top_1200: 115%;
       );
     }
 
-    &__navbar-button-menu {
+    &__navbar-nav {
       display: none;
     }
 
