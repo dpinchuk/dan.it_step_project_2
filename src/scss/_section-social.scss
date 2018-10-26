@@ -37,7 +37,7 @@
   text-align: center;
 
   &__carusel {
-    transition: transform 3s;
+    transition: width 1s;
     text-align: center;
 
     &-social-item {
@@ -82,6 +82,10 @@
   }
 
   .arrow {
+    &:focus {
+      outline: none;
+    }
+
     position: absolute;
     font-size: 40px;
     border: none;
@@ -141,6 +145,10 @@
         }
 
       }
+
+    }
+
+    &__social-nets {
 
     }
 
