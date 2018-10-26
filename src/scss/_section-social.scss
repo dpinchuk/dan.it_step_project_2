@@ -37,14 +37,12 @@
   text-align: center;
 
   &__carusel {
-    position: relative;
-    display: inline-block;
+    transition: transform 3s;
     text-align: center;
 
     &-social-item {
       &__img {
         width: 85px;
-        height: 85px;
       }
 
       &__name {
@@ -63,15 +61,11 @@
 
       &__description {
         span {
-          font-family: LatoReg, sans-serif;
-          color: #333333;
-          font-size: 17px;
-          font-weight: 400;
-          line-height: 24px;
+          color: #8d81ac;
         }
 
         font-family: LatoReg, sans-serif;
-        color: #8d81ac;
+        color: #333333;
         font-size: 17px;
         font-weight: 400;
         line-height: 24px;
@@ -89,22 +83,11 @@
 
   .arrow {
     position: absolute;
-    font-size: 25px;
-    width: 10px;
+    font-size: 40px;
     border: none;
     color: #8d81ac;
     background-color: initial;
     cursor: pointer;
-  }
-
-  .prev {
-    top: 85%;
-    right: 100%;
-  }
-
-  .next {
-    bottom: 5%;
-    left: 100%;
   }
 
 }
@@ -114,31 +97,48 @@
 /*320*/
 /*--------------------------------------------------------------------------------------------------------------------*/
 @media only screen and (max-width: 400px) and (min-width: 320px) {
+
+  .prev {
+    right: 100%;
+    top: 39%;
+  }
+
+  .next {
+    left: 100%;
+    bottom: 53%;
+  }
+
   .section-social {
+    position: relative;
+    width: 250px;
+    margin: 0 auto;
+
     padding-top: 50px;
     padding-bottom: 60px;
 
     &__carusel {
-      position: relative;
       display: inline-block;
 
-      &-img {
-        padding-bottom: 25px;
-      }
+      &-social-item {
+        &__img {
+          padding-bottom: 25px;
+        }
 
-      &-name {
-        padding-bottom: 10px;
-      }
+        &__name {
+          padding-bottom: 10px;
+        }
 
-      &-position {
-        padding-bottom: 25px;
-      }
+        &__position {
+          padding-bottom: 25px;
+        }
 
-      &-description {
-        padding-bottom: 15px;
-      }
+        &__description {
+          padding-bottom: 15px;
+        }
 
-      &-time {
+        &__time {
+
+        }
 
       }
 
