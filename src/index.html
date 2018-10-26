@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="js/common_scripts.js"></script>
     <script src="js/nav_menu.js"></script>
 
 </head>
@@ -193,6 +194,43 @@
             <div class="section-features__img"></div>
 
         </div>
+    </div>
+</section>
+
+<section class="section-social">
+    <div class="container">
+
+        <div class="section-social__carusel">
+            <input type="button" value="&lsaquo;" onclick="previous()" class="arrow prev" id="previous"/>
+
+            <div id="socialItem" class="section-social__carusel-social-item">
+                <img src="" alt="" class="section-social__carusel-social-item__img">
+                <h3 class="section-social__carusel-social-item__name text-capitalize"></h3>
+                <h3 class="section-social__carusel-social-item__position text-capitalize"></h3>
+                <p class="section-social__carusel-social-item__description"><span></span></p>
+                <h3 class="section-social__carusel-social-item__time"></h3>
+            </div>
+
+            <input type="button" value="&rsaquo;" onclick="next()" class="arrow next" id="next"/>
+        </div>
+
+        <div class="section-social__social-nets">
+            <div class="section-social__social-nets__github">
+                <a href="" class="section-social__social-nets__github-btn">GitHub</a>
+                <p class="section-social__social-nets__github-followers text-capitalize">7 352 followers</p>
+            </div>
+
+            <div class="section-social__social-nets__github">
+                <a href="" class="section-social__social-nets__github-btn">Twitter</a>
+                <p class="section-social__social-nets__github-followers text-capitalize">136 312 followers</p>
+            </div>
+
+            <div class="section-social__social-nets__github">
+                <a href="" class="section-social__social-nets__github-btn">GitHub</a>
+                <p class="section-social__social-nets__github-followers text-capitalize">218 092 subscribers</p>
+            </div>
+        </div>
+
     </div>
 </section>
 
