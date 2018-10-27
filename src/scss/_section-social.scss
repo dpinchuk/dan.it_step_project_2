@@ -78,22 +78,83 @@
         line-height: 32px;
       }
     }
-
   }
 
-  .arrow {
-    &:focus {
-      outline: none;
+  &__social-nets {
+    text-align: center;
+
+    &__net {
+      &-github-btn {
+        &:hover {
+          background-color: #2b414d;
+          color: #f3f3f3;
+        }
+
+        display: block;
+        background-color: #f3f3f3;
+        margin-bottom: 20px;
+        color: #000000;
+
+      }
+
+      &-twitter-btn {
+        &:hover {
+          border-color: #26a6d1;
+          background-color: #ffffff;
+          color: #26a6d1;
+        }
+
+        display: block;
+        background-color: #26a6d1;
+        margin-bottom: 20px;
+        color: #ffffff;
+      }
+
+      &-facebook-btn {
+        &:hover {
+          border-color: #3b5998;
+          background-color: #ffffff;
+          color: #3b5998;
+        }
+
+        display: block;
+        background-color: #3b5998;
+        margin-bottom: 20px;
+        color: #ffffff;
+      }
+
+      &-followers {
+        color: #848e97;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 32px;
+      }
+
+      padding-bottom: 30px;
     }
 
-    position: absolute;
-    font-size: 40px;
-    border: none;
-    color: #8d81ac;
-    background-color: initial;
-    cursor: pointer;
+  }
+}
+
+.arrow {
+  &:focus {
+    outline: none;
   }
 
+  //position: absolute;
+  font-size: 40px;
+  border: none;
+  color: #8d81ac;
+  background-color: initial;
+  cursor: pointer;
+}
+
+.btn-social {
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 32px;
 }
 /*--------------------------------------------------------------------------------------------------------------------*/
 
@@ -103,27 +164,27 @@
 @media only screen and (max-width: 400px) and (min-width: 320px) {
 
   .prev {
-    right: 100%;
-    top: 39%;
+    width: 10%;
   }
 
   .next {
-    left: 100%;
-    bottom: 53%;
+    width: 10%;
   }
 
   .section-social {
     position: relative;
-    width: 250px;
     margin: 0 auto;
 
     padding-top: 50px;
     padding-bottom: 60px;
 
     &__carusel {
-      display: inline-block;
+      display: flex;
 
       &-social-item {
+        width: 80%;
+        display: inline-block;
+
         &__img {
           padding-bottom: 25px;
         }
@@ -141,17 +202,44 @@
         }
 
         &__time {
-
+          padding-bottom: 35px;
         }
-
       }
 
     }
 
     &__social-nets {
+      text-align: center;
+
+      &__net {
+        &-github-btn {
+          display: block;
+          background-color: #f3f3f3;
+          margin-bottom: 10px;
+        }
+
+        &-twitter-btn {
+          display: block;
+          background-color: #26a6d1;
+          margin-bottom: 10px;
+        }
+
+        &-facebook-btn {
+          display: block;
+          background-color: #3b5998;
+          margin-bottom: 10px;
+        }
+
+        padding-bottom: 30px;
+      }
 
     }
 
+  }
+
+  .btn-social {
+    text-decoration: none;
+    padding: 10px 50px 10px 50px;
   }
 
 }
@@ -161,9 +249,86 @@
 /*480*/
 /*--------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 480px) and (min-width: 401px) {
+
+  .prev {
+    width: 10%;
+  }
+
+  .next {
+    width: 10%;
+  }
+
   .section-social {
+    position: relative;
+    margin: 0 auto;
+
     padding-top: 50px;
     padding-bottom: 60px;
+
+    &__carusel {
+      display: flex;
+
+      &-social-item {
+        width: 80%;
+        display: inline-block;
+
+        &__img {
+          padding-bottom: 25px;
+        }
+
+        &__name {
+          padding-bottom: 10px;
+        }
+
+        &__position {
+          padding-bottom: 25px;
+        }
+
+        &__description {
+          padding-bottom: 15px;
+        }
+
+        &__time {
+          padding-bottom: 35px;
+        }
+      }
+
+    }
+
+    &__social-nets {
+      text-align: center;
+
+      &__net {
+        &-github-btn {
+          display: block;
+          background-color: #f3f3f3;
+          margin-bottom: 10px;
+        }
+
+        &-twitter-btn {
+          display: block;
+          background-color: #26a6d1;
+          margin-bottom: 10px;
+        }
+
+        &-facebook-btn {
+          display: block;
+          background-color: #3b5998;
+          margin-bottom: 10px;
+        }
+
+        width: 60%;
+        display: inline-grid;
+        padding-bottom: 30px;
+      }
+
+    }
+
+  }
+
+  .btn-social {
+    text-decoration: none;
+    padding: 10px 50px 10px 50px;
   }
 
 }

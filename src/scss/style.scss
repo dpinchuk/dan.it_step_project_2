@@ -194,10 +194,9 @@ body {
   background-position: -240px -49px;
 }
 
-
-
-.sprite-social {
-  background-image: url(spritesheet.png);
+/*--------------------------------------------------------------------------------------------------------------------*/
+.sprite {
+  background-image: url(../img/common/section-social/sprites/sprite-section-social.png);
   background-repeat: no-repeat;
   display: block;
 }
@@ -208,14 +207,33 @@ body {
   background-position: -5px -5px;
 }
 
+.sprite-icon-facebook-hover {
+  width: 10px;
+  height: 20px;
+  background-position: -25px -5px;
+}
+
 .sprite-icon-git {
   width: 20px;
   height: 20px;
-  background-position: -25px -5px;
+  background-position: -5px -35px;
+}
+
+.sprite-icon-git-hover {
+  width: 20px;
+  height: 20px;
+  background-position: -35px -35px;
 }
 
 .sprite-icon-twitter {
   width: 20px;
   height: 16px;
-  background-position: -5px -35px;
+  background-position: -45px -5px;
 }
+
+.sprite-icon-twitter-hover {
+  width: 20px;
+  height: 16px;
+  background-position: -65px -31px;
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
