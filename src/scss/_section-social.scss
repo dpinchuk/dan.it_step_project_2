@@ -36,6 +36,10 @@
 .section-social {
   text-align: center;
 
+  &__line {
+    display: none;
+  }
+
   &__carusel {
     transition: width 1s;
     text-align: center;
@@ -99,7 +103,7 @@
 
       &-twitter-btn {
         &:hover {
-          border-color: #26a6d1;
+          border: 1px solid #26a6d1;
           background-color: #ffffff;
           color: #26a6d1;
         }
@@ -112,7 +116,7 @@
 
       &-facebook-btn {
         &:hover {
-          border-color: #3b5998;
+          border: 1px solid #3b5998;
           background-color: #ffffff;
           color: #3b5998;
         }
@@ -156,21 +160,22 @@
   font-weight: 400;
   line-height: 32px;
 }
+
+.prev {
+  width: 10%;
+  padding-top: 15%;
+}
+
+.next {
+  width: 10%;
+  padding-top: 15%;
+}
 /*--------------------------------------------------------------------------------------------------------------------*/
 
 
 /*320*/
 /*--------------------------------------------------------------------------------------------------------------------*/
 @media only screen and (max-width: 400px) and (min-width: 320px) {
-
-  .prev {
-    width: 10%;
-  }
-
-  .next {
-    width: 10%;
-  }
-
   .section-social {
     position: relative;
     margin: 0 auto;
@@ -249,15 +254,6 @@
 /*480*/
 /*--------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 480px) and (min-width: 401px) {
-
-  .prev {
-    width: 10%;
-  }
-
-  .next {
-    width: 10%;
-  }
-
   .section-social {
     position: relative;
     margin: 0 auto;
@@ -339,9 +335,95 @@
 /*--------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 992px) and (min-width: 481px) {
   .section-social {
+    position: relative;
+    margin: 0 auto;
+
     padding-top: 50px;
     padding-bottom: 60px;
 
+    &__carusel {
+      display: flex;
+
+      &-social-item {
+        width: 80%;
+        display: inline-block;
+
+        &__img {
+          padding-bottom: 25px;
+        }
+
+        &__name {
+          padding-bottom: 10px;
+        }
+
+        &__position {
+          padding-bottom: 25px;
+        }
+
+        &__description {
+          padding-bottom: 15px;
+        }
+
+        &__time {
+          padding-bottom: 10px;
+        }
+      }
+
+    }
+
+    &__line {
+      display: block;
+      background-color: #f3f3f3;
+      border: none;
+      color: #f3f3f3;
+      height: 2px;
+      margin-bottom: 60px;
+    }
+
+    &__social-nets {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      &__net {
+        &-github-btn {
+          display: block;
+          background-color: #f3f3f3;
+          margin-bottom: 10px;
+        }
+
+        &-twitter-btn {
+          display: block;
+          background-color: #26a6d1;
+          margin-bottom: 10px;
+        }
+
+        &-facebook-btn {
+          display: block;
+          background-color: #3b5998;
+          margin-bottom: 10px;
+        }
+
+        width: 40%;
+
+        &:nth-child(1) {
+          padding-right: 10px;
+        }
+
+        &:nth-child(2) {
+          padding-left: 10px;
+        }
+
+        padding-bottom: 30px;
+      }
+
+    }
+
+  }
+
+  .btn-social {
+    text-decoration: none;
+    padding: 10px 50px 10px 50px;
   }
 
 }
@@ -352,9 +434,92 @@
 /*--------------------------------------------------------------------------------------------------------------------*/
 @media only screen and (max-width: 1200px) and (min-width: 993px) {
   .section-social {
+    position: relative;
+    margin: 0 auto;
+
     padding-top: 50px;
     padding-bottom: 60px;
 
+    &__carusel {
+      display: flex;
+
+      &-social-item {
+        width: 80%;
+        display: inline-block;
+
+        &__img {
+          padding-bottom: 25px;
+        }
+
+        &__name {
+          padding-bottom: 10px;
+        }
+
+        &__position {
+          padding-bottom: 25px;
+        }
+
+        &__description {
+          padding-bottom: 15px;
+        }
+
+        &__time {
+          padding-bottom: 10px;
+        }
+      }
+
+    }
+
+    &__line {
+      display: block;
+      background-color: #f3f3f3;
+      border: none;
+      color: #f3f3f3;
+      height: 2px;
+      margin-bottom: 60px;
+    }
+
+    &__social-nets {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      &__net {
+        &-github-btn {
+          display: block;
+          background-color: #f3f3f3;
+          margin-bottom: 10px;
+        }
+
+        &-twitter-btn {
+          display: block;
+          background-color: #26a6d1;
+          margin-bottom: 10px;
+        }
+
+        &-facebook-btn {
+          display: block;
+          background-color: #3b5998;
+          margin-bottom: 10px;
+        }
+
+        width: 25%;
+
+        &:nth-child(2) {
+          margin-left: 40px;
+          margin-right: 40px;
+        }
+
+        padding-bottom: 30px;
+      }
+
+    }
+
+  }
+
+  .btn-social {
+    text-decoration: none;
+    padding: 10px 50px 10px 50px;
   }
 
 }
