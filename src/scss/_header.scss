@@ -351,15 +351,18 @@ $description_position_top_1200: 115%;
 //}
 
 .header {
-  @include bg_color($bg_color_nav);
-  background-repeat: no-repeat;
-  background-position: center;
+  //@include bg_color($bg_color_nav);
+  //background-repeat: no-repeat;
+  //background-position: center;
   text-align: center;
 
   &__navbar {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #262627;
 
     &-button-buy {
       &:hover {
@@ -404,7 +407,7 @@ $description_position_top_1200: 115%;
   }
 
   &__text {
-    background-color: #000001;
+    //background-color: #000001;
   }
 
   &__title {
@@ -451,8 +454,15 @@ $description_position_top_1200: 115%;
 /*--------------------------------------------------------------------------------------------------------------------*/
 @media only screen and (max-width: 400px) and (min-width: 0px) {
 
-  // header 'header' 320
   .header {
+
+    //@include bg_image($bg_header_320, $bg_image_width_320, $bg_image_height_320);
+
+    background: url($bg_header_320) no-repeat;
+    background-size: 100%;
+    //width: $bg_image_width_320;
+    //    //height: $bg_image_height_320;
+
     &__container-navbar {
       @include container_size($width_container_navbar_320);
     }
@@ -523,7 +533,7 @@ $description_position_top_1200: 115%;
     }
 
     &__bg-image {
-      @include bg_image($bg_header_320, 320px, 378px);
+      //@include bg_image($bg_header_320, 320px, 378px);
     }
 
     &__bg-image__btn-free {

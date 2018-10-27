@@ -50,7 +50,7 @@
         padding-bottom: 20px;
 
         &-img {
-          width: 85px; //section-social__carusel-social-item__person          section-social__carusel-social-item__person-img
+          width: 85px;
         }
 
         &-data {
@@ -153,7 +153,6 @@
     outline: none;
   }
 
-  //position: absolute;
   font-size: 40px;
   border: none;
   color: #8d81ac;
@@ -198,11 +197,21 @@
         width: 80%;
         display: inline-block;
 
-        &__img {
-          padding-bottom: 25px;
+        &__person {
+
+          &-img {
+            padding-bottom: 25px;
+          }
+
+          &-data {
+
+          }
+
         }
 
-        &__name {
+
+
+        &-name {
           padding-bottom: 10px;
         }
 
@@ -210,11 +219,11 @@
           padding-bottom: 25px;
         }
 
-        &__description {
+        &-description {
           padding-bottom: 15px;
         }
 
-        &__time {
+        &-time {
           padding-bottom: 35px;
         }
       }
