@@ -15,23 +15,52 @@ $logo_320: "../img/320/header/logo_320.png";
 $logo_width_320: 43px;
 $logo_height_320: 41px;
 
-$btn_menu_320: "../img/common/header/header_button_menu.png";
+$btn_menu_320: "../img/320/header/header_button_menu_320.png";
 $btn_menu_width_320: 26px;
 $btn_menu_height_320: 21px;
 /*--------------------------------------------------------------------------------------------------------------------*/
 
 /*Header variables 480*/
 /*--------------------------------------------------------------------------------------------------------------------*/
+$bg_header_480: "../img/480/header/bg_header_480.png";
+
+$logo_480: "../img/480/header/logo_480.png";
+$logo_width_480: 147px;
+$logo_height_480: 41px;
+
+$btn_menu_480: "../img/480/header/header_button_menu_480.png";
+$btn_menu_width_480: 26px;
+$btn_menu_height_480: 21px;
 /*--------------------------------------------------------------------------------------------------------------------*/
 
 
 /*Header variables 768*/
 /*--------------------------------------------------------------------------------------------------------------------*/
+$bg_header_768: "../img/768/header/bg_header_768.png";
+
+$logo_768: "../img/768/header/logo_768.png";
+$logo_width_768: 147px;
+$logo_height_768: 41px;
+
+$btn_menu_768: "../img/768/header/header_button_menu_768.png";
+$btn_menu_width_768: 26px;
+$btn_menu_height_768: 21px;
+
 /*--------------------------------------------------------------------------------------------------------------------*/
 
 
 /*Header variables 1200*/
 /*--------------------------------------------------------------------------------------------------------------------*/
+$bg_header_1200: "../img/1200/header/bg_header_1200.png";
+
+$logo_1200: "../img/1200/header/logo_1200.png";
+$logo_width_1200: 147px;
+$logo_height_1200: 41px;
+
+$btn_menu_1200: "../img/1200/header/header_button_menu_1200.png";
+$btn_menu_width_1200: 26px;
+$btn_menu_height_1200: 21px;
+
 /*--------------------------------------------------------------------------------------------------------------------*/
 
 
@@ -43,10 +72,13 @@ $btn_menu_height_320: 21px;
 /*Header 'header'*/
 /*--------------------------------------------------------------------------------------------------------------------*/
 .header {
+
+  .wraper {
+    background-color: #262627;
+  }
+
   &__navbar {
-
     &-logo {
-
     }
 
     &-btn-buy {
@@ -57,9 +89,27 @@ $btn_menu_height_320: 21px;
       font-weight: 700;
       line-height: 15px;
     }
+  }
+  
+  &__text{
+    text-align: center;
+    &-title {
+      color: #ffffff;
+      font-weight: 700;
+      line-height: 15px;
+    }
 
+    &-description {
+      color: #8d81ac;
+      font-weight: 400;
+      line-height: 45px;
+      letter-spacing: 2px;
+    }
 
-
+    &-version {
+      color: #848e97;
+      font-weight: 400;
+    }
   }
 
 }
@@ -68,7 +118,7 @@ $btn_menu_height_320: 21px;
 
 /*320*/
 /*--------------------------------------------------------------------------------------------------------------------*/
-@media only screen and (max-width: 400px) and (min-width: 320px) {
+@media only screen and (max-width: 400px) and (min-width: 0) {
   .header {
     background: url($bg_header_320) no-repeat;
     background-size: 100%;
@@ -94,24 +144,37 @@ $btn_menu_height_320: 21px;
         padding: 10px 25px;
       }
 
-      &-menu768 {
-        display: none;
-      }
-
-      &-menu1200 {
+      &-menu {
         display: none;
       }
 
       &-btn-menu {
         background: url($btn_menu_320) no-repeat;
-        //background-size: 100%;
         width: $btn_menu_width_320;
         height: $btn_menu_height_320;
       }
-
     }
 
+    &__text {
+
+      &-title {
+        font-size: 48px;
+        padding-top: 45px;
+        padding-bottom: 20px;
+      }
+
+      &-description {
+        font-size: 18px;
+        padding-bottom: 20px;
+      }
+
+      &-version {
+        font-size: 14px;
+      }
+
+    }
   }
+
 }
 /*--------------------------------------------------------------------------------------------------------------------*/
 
@@ -121,7 +184,7 @@ $btn_menu_height_320: 21px;
 @media screen and (max-width: 480px) and (min-width: 401px) {
 
   .header {
-    background: url($bg_header_320) no-repeat;
+    background: url($bg_header_480) no-repeat;
     background-size: 100%;
 
     &__navbar {
@@ -133,10 +196,10 @@ $btn_menu_height_320: 21px;
       padding-bottom: 30px;
 
       &-logo {
-        background: url($logo_320) no-repeat;
+        background: url($logo_480) no-repeat;
         background-size: 100%;
-        width: $logo_width_320;
-        height: $logo_height_320;
+        width: $logo_width_480;
+        height: $logo_height_480;
       }
 
       &-btn-buy {
@@ -145,23 +208,16 @@ $btn_menu_height_320: 21px;
         padding: 10px 25px;
       }
 
-      &-menu768 {
-        display: none;
-      }
-
-      &-menu1200 {
+      &-menu {
         display: none;
       }
 
       &-btn-menu {
-        background: url($btn_menu_320) no-repeat;
-        //background-size: 100%;
-        width: $btn_menu_width_320;
-        height: $btn_menu_height_320;
+        background: url($btn_menu_480) no-repeat;
+        width: $btn_menu_width_480;
+        height: $btn_menu_height_480;
       }
-
     }
-
   }
 
 }
@@ -171,6 +227,54 @@ $btn_menu_height_320: 21px;
 /*768*/
 /*--------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 992px) and (min-width: 481px) {
+  .header {
+    background: url($bg_header_768) no-repeat;
+    background-size: 100%;
+
+    &__navbar {
+      position: relative;
+      align-items: center;
+      padding-top: 30px;
+      padding-bottom: 30px;
+
+      &-logo {
+        background: url($logo_768) no-repeat;
+        background-size: 100%;
+        width: $logo_width_768;
+        height: $logo_height_768;
+      }
+
+      &-menu {
+        padding-top: 30px;
+        padding-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+        &-link {
+          text-decoration: none;
+          color: #8d81ac;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 15px;
+        }
+        
+      }
+
+      &-btn-buy {
+        position: absolute;
+        align-self: center;
+        font-size: 15px;
+        padding: 10px 25px;
+        right: 0;
+        bottom: 54%;
+      }
+
+      &-btn-menu {
+        display: none;
+      }
+    }
+  }
 
 }
 /*--------------------------------------------------------------------------------------------------------------------*/
@@ -179,6 +283,60 @@ $btn_menu_height_320: 21px;
 /*1200*/
 /*--------------------------------------------------------------------------------------------------------------------*/
 @media only screen and (max-width: 1200px) and (min-width: 993px) {
+
+  .header {
+    background: url($bg_header_1200) no-repeat;
+    background-size: 100%;
+
+    &__navbar {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-top: 30px;
+      padding-bottom: 30px;
+
+      &-logo {
+        background: url($logo_1200) no-repeat;
+        background-size: 100%;
+        width: $logo_width_1200;
+        height: $logo_height_1200;
+      }
+      .header__flex-wraper {
+        display: flex;
+        align-items: center;
+      }
+
+      &-menu {
+        padding-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &-link {
+          text-decoration: none;
+          color: #8d81ac;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 15px;
+          padding-right: 50px;
+        }
+
+      }
+
+      &-btn-buy {
+        align-self: center;
+        font-size: 15px;
+        padding: 10px 25px;
+        right: 0;
+        bottom: 54%;
+      }
+
+      &-btn-menu {
+        display: none;
+      }
+    }
+  }
 
 }
 /*--------------------------------------------------------------------------------------------------------------------*/

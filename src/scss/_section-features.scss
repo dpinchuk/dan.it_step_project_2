@@ -53,9 +53,8 @@ $bg_image_height_1200: 519px;
   width: $width;
 }
 
-@mixin bg_image($bg_image, $bg_image_width, $bg_image_height) {
+@mixin bg_image($bg_image, $bg_image_height) {
   background: url($bg_image) no-repeat;
-  width: $bg_image_width;
   height: $bg_image_height;
 }
 /*--------------------------------------------------------------------------------------------------------------------*/
@@ -145,7 +144,7 @@ $bg_image_height_1200: 519px;
     }
 
     &__img {
-      @include bg_image($bg_image_320, $bg_image_width_320, $bg_image_height_320);
+      @include bg_image($bg_image_320, $bg_image_height_320);
     }
   }
 }
@@ -200,7 +199,7 @@ $bg_image_height_1200: 519px;
     }
 
     &__img {
-      @include bg_image($bg_image_480, $bg_image_width_480, $bg_image_height_480);
+      @include bg_image($bg_image_480, $bg_image_height_480);
     }
   }
 }
@@ -255,7 +254,7 @@ $bg_image_height_1200: 519px;
     }
 
     &__img {
-      @include bg_image($bg_image_768, $bg_image_width_768, $bg_image_height_768);
+      @include bg_image($bg_image_768, $bg_image_height_768);
     }
   }
 }
@@ -323,7 +322,7 @@ $bg_image_height_1200: 519px;
     }
 
     &__img {
-      @include bg_image($bg_image_1200, $bg_image_width_1200, $bg_image_height_1200);
+      @include bg_image($bg_image_1200, $bg_image_height_1200);
       @include float_width(right, 58%);
     }
   }

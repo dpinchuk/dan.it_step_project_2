@@ -21,6 +21,8 @@ body {
 
 .container {
   width: 100%;
+  min-width: 320px;
+  max-width: 1200px;
   margin: 0 auto;
   padding-left: 10px;
   padding-right: 10px;
@@ -28,7 +30,7 @@ body {
 
 @media only screen and (max-width: 1200px) and (min-width: 993px) {
   .container {
-    width: 1200px;
+    //width: 1200px;
     //min-width: 320px;
     //padding-left: 10px;
     //padding-right: 10px;

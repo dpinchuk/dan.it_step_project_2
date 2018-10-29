@@ -457,8 +457,8 @@ $description_position_top_1200: 115%;
 
     background: url($bg_header_320) no-repeat;
     background-size: 100%;
-    //width: $bg_image_width_320;
-    //    //height: $bg_image_height_320;
+    width: $bg_image_width_320;
+    height: $bg_image_height_320;
 
     &__container-navbar {
       @include container_size($width_container_navbar_320);
