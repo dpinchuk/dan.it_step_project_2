@@ -94,9 +94,17 @@ $btn_menu_height_320: 21px;
         padding: 10px 25px;
       }
 
+      &-menu768 {
+        display: none;
+      }
+
+      &-menu1200 {
+        display: none;
+      }
+
       &-btn-menu {
         background: url($btn_menu_320) no-repeat;
-        background-size: 100%;
+        //background-size: 100%;
         width: $btn_menu_width_320;
         height: $btn_menu_height_320;
       }
@@ -111,6 +119,50 @@ $btn_menu_height_320: 21px;
 /*480*/
 /*--------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 480px) and (min-width: 401px) {
+
+  .header {
+    background: url($bg_header_320) no-repeat;
+    background-size: 100%;
+
+    &__navbar {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-top: 30px;
+      padding-bottom: 30px;
+
+      &-logo {
+        background: url($logo_320) no-repeat;
+        background-size: 100%;
+        width: $logo_width_320;
+        height: $logo_height_320;
+      }
+
+      &-btn-buy {
+        align-self: center;
+        font-size: 15px;
+        padding: 10px 25px;
+      }
+
+      &-menu768 {
+        display: none;
+      }
+
+      &-menu1200 {
+        display: none;
+      }
+
+      &-btn-menu {
+        background: url($btn_menu_320) no-repeat;
+        //background-size: 100%;
+        width: $btn_menu_width_320;
+        height: $btn_menu_height_320;
+      }
+
+    }
+
+  }
 
 }
 /*--------------------------------------------------------------------------------------------------------------------*/
