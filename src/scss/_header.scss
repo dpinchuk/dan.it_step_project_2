@@ -360,6 +360,7 @@ $description_position_top_1200: 115%;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding-left: 10px;
     padding-right: 10px;
     background-color: #262627;
@@ -374,15 +375,11 @@ $description_position_top_1200: 115%;
     }
 
     &-nav {
-      //position: relative;
-
       &-button {
         position: relative;
       }
 
       &-menu {
-        //position: relative;
-        //margin-top: 10px;
       }
     }
 
@@ -698,7 +695,9 @@ $description_position_top_1200: 115%;
     }
 
     &__navbar-menu_768 {
-      display: inline-flex;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
       font-size: 16px;
       font-weight: 700;
       padding-bottom: 20px;

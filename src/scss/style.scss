@@ -7,7 +7,6 @@
 body {
   font-family: Montserrat, sans-serif;
   min-width: 320px;
-  //overflow-x: hidden;
 }
 /*--------------------------------------------------------------------------------------------------------------------*/
 
@@ -30,10 +29,10 @@ body {
 @media only screen and (max-width: 1200px) and (min-width: 993px) {
   .container {
     width: 1200px;
-    min-width: 320px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: 0 auto;
+    //min-width: 320px;
+    //padding-left: 10px;
+    //padding-right: 10px;
+    //margin: 0 auto;
   }
 }
 
@@ -65,7 +64,8 @@ body {
 /*Import files*/
 /*--------------------------------------------------------------------------------------------------------------------*/
 //mix-file
-@import "header";
+@import "mixing";
+@import "header_";
 @import "section-revolutionary";
 @import "section-features";
 @import "section-social";
