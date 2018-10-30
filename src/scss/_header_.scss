@@ -72,34 +72,22 @@ $btn_menu_height_1200: 21px;
 /*Header 'header'*/
 /*--------------------------------------------------------------------------------------------------------------------*/
 .header {
+  position: relative;
 
-  .wraper {
+  .wraper-container {
     background-color: #262627;
-  }
-
-  &__navbar {
-    &-logo {
-    }
-
-    &-btn-buy {
-      cursor: pointer;
-      border-radius: 20px;
-      background-color: #8c80ab;
-      color: #ffffff;
-      font-weight: 700;
-      line-height: 15px;
-    }
   }
   
   &__text{
     text-align: center;
-    &-title {
+
+    .text__title {
       color: #ffffff;
       font-weight: 700;
       line-height: 15px;
     }
 
-    &-description {
+    .text__description {
       font-family: LatoReg, sans-serif;
       color: #8d81ac;
       font-weight: 400;
@@ -107,10 +95,42 @@ $btn_menu_height_1200: 21px;
       letter-spacing: 2px;
     }
 
-    &-version {
+    .text__version {
       color: #848e97;
       font-weight: 400;
     }
+  }
+
+  .btn__buy {
+    background-color: #8c80ab;
+    color: #ffffff;
+  }
+
+  .btn__dowload {
+    position: absolute;
+    background-color: #8c80ab;
+    color: #ffffff;
+    margin: auto;
+    top: 97%;
+    left: 0;
+    right: 0;
+    width: 290px;
+    //top: 100%;
+    //left: 50%;
+    //transform: translate(-50%, -50%);
+  }
+
+  &__trial {
+    position: absolute;
+    color: #848e97;
+    font-weight: 400;
+    line-height: 15px;
+    margin: auto;
+    top: 101%;
+    width: 60%;
+    left: 0;
+    right: 0;
+    text-align: center;
   }
 
 }
@@ -128,6 +148,13 @@ $btn_menu_height_1200: 21px;
     background-repeat: no-repeat;
     background-size: cover;
 
+    &__logo {
+      background: url($logo_320) no-repeat;
+      background-size: 100%;
+      width: $logo_width_320;
+      height: $logo_height_320;
+    }
+
     &__navbar {
       align-items: center;
       display: flex;
@@ -135,49 +162,51 @@ $btn_menu_height_1200: 21px;
       justify-content: space-between;
       padding-top: 30px;
       padding-bottom: 30px;
-
-      &-logo {
-        background: url($logo_320) no-repeat;
-        background-size: 100%;
-        width: $logo_width_320;
-        height: $logo_height_320;
-      }
-
-      &-btn-buy {
-        align-self: center;
-        font-size: 15px;
-        padding: 10px 25px;
-      }
-
-      &-menu {
-        display: none;
-      }
-
-      &-btn-menu {
-        background: url($btn_menu_320) no-repeat;
-        width: $btn_menu_width_320;
-        height: $btn_menu_height_320;
-      }
     }
 
     &__text {
 
-      &-title {
+      .text__title {
         font-size: 48px;
         padding-top: 45px;
         padding-bottom: 20px;
       }
 
-      &-description {
+      .text__description {
         font-size: 18px;
         padding-bottom: 20px;
       }
 
-      &-version {
+      .text__version {
         font-size: 14px;
       }
-
     }
+
+    &__trial {
+      padding-top: 15px;
+      font-size: 14px;
+      top: 102%;
+    }
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .btn__buy {
+    font-size: 15px;
+    padding: 10px 25px;
+  }
+
+  .btn__menu {
+    background: url($btn_menu_320) no-repeat;
+    width: $btn_menu_width_320;
+    height: $btn_menu_height_320;
+  }
+
+  .btn__dowload {
+    font-size: 18px;
+    padding: 15px 30px;
   }
 
 }
@@ -196,6 +225,13 @@ $btn_menu_height_1200: 21px;
     background-repeat: no-repeat;
     background-size: cover;
 
+    &__logo {
+      background: url($logo_480) no-repeat;
+      background-size: 100%;
+      width: $logo_width_480;
+      height: $logo_height_480;
+    }
+
     &__navbar {
       align-items: center;
       display: flex;
@@ -203,49 +239,50 @@ $btn_menu_height_1200: 21px;
       justify-content: space-between;
       padding-top: 30px;
       padding-bottom: 30px;
-
-      &-logo {
-        background: url($logo_480) no-repeat;
-        background-size: 100%;
-        width: $logo_width_480;
-        height: $logo_height_480;
-      }
-
-      &-btn-buy {
-        align-self: center;
-        font-size: 15px;
-        padding: 10px 25px;
-      }
-
-      &-menu {
-        display: none;
-      }
-
-      &-btn-menu {
-        background: url($btn_menu_480) no-repeat;
-        width: $btn_menu_width_480;
-        height: $btn_menu_height_480;
-      }
     }
 
     &__text {
 
-      &-title {
+      .text__title {
         font-size: 54px;
         padding-top: 100px;
         padding-bottom: 35px;
       }
 
-      &-description {
+      .text__description {
         font-size: 20px;
         padding-bottom: 25px;
       }
 
-      &-version {
+      .text__version {
         font-size: 16px;
       }
-
     }
+
+    &__trial {
+      padding-top: 20px;
+      font-size: 14px;
+    }
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .btn__buy {
+    font-size: 15px;
+    padding: 10px 25px;
+  }
+
+  .btn__menu {
+    background: url($btn_menu_480) no-repeat;
+    width: $btn_menu_width_480;
+    height: $btn_menu_height_480;
+  }
+
+  .btn__dowload {
+    font-size: 18px;
+    padding: 15px 0;
   }
 
 }
@@ -263,68 +300,75 @@ $btn_menu_height_1200: 21px;
     background-repeat: no-repeat;
     background-size: cover;
 
+    &__logo {
+      background: url($logo_768) no-repeat;
+      background-size: 100%;
+      width: $logo_width_768;
+      height: $logo_height_768;
+    }
+
     &__navbar {
       position: relative;
       align-items: center;
       padding-top: 30px;
       padding-bottom: 30px;
-
-      &-logo {
-        background: url($logo_768) no-repeat;
-        background-size: 100%;
-        width: $logo_width_768;
-        height: $logo_height_768;
-      }
-
-      &-menu {
-        padding-top: 30px;
-        padding-left: 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        
-        &-link {
-          text-decoration: none;
-          color: #8d81ac;
-          font-size: 16px;
-          font-weight: 700;
-          line-height: 15px;
-        }
-        
-      }
-
-      &-btn-buy {
-        position: absolute;
-        align-self: center;
-        font-size: 15px;
-        padding: 10px 25px;
-        right: 0;
-        bottom: 54%;
-      }
-
-      &-btn-menu {
-        display: none;
-      }
     }
 
     &__text {
 
-      &-title {
+      .text__title {
         font-size: 72px;
         padding-top: 50px;
         padding-bottom: 25px;
       }
 
-      &-description {
+      .text__description {
         font-size: 24px;
         padding-bottom: 20px;
       }
 
-      &-version {
+      .text__version {
         font-size: 14px;
       }
-
     }
+
+    &__trial {
+      padding-top: 20px;
+      font-size: 14px;
+    }
+  }
+
+  .menu {
+    padding-top: 30px;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    &__link {
+      text-decoration: none;
+      color: #8d81ac;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 15px;
+    }
+  }
+
+  .btn__buy {
+    position: absolute;
+    font-size: 15px;
+    padding: 12px 25px;
+    right: 0;
+    bottom: 54%;
+  }
+
+  .btn__menu {
+    display: none;
+  }
+
+  .btn__dowload {
+    font-size: 18px;
+    padding: 15px 0;
   }
 
 }
@@ -335,7 +379,6 @@ $btn_menu_height_1200: 21px;
 /*--------------------------------------------------------------------------------------------------------------------*/
 //@media only screen and (max-width: 1200px) and (min-width: 993px) {
 @media only screen and (min-width: 993px) {
-
   .header {
     background: url($bg_header_1200);
     //height: 100%;
@@ -343,6 +386,13 @@ $btn_menu_height_1200: 21px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    &__logo {
+      background: url($logo_1200) no-repeat;
+      background-size: 100%;
+      width: $logo_width_1200;
+      height: $logo_height_1200;
+    }
 
     &__navbar {
       align-items: center;
@@ -352,65 +402,66 @@ $btn_menu_height_1200: 21px;
       padding-top: 30px;
       padding-bottom: 30px;
 
-      &-logo {
-        background: url($logo_1200) no-repeat;
-        background-size: 100%;
-        width: $logo_width_1200;
-        height: $logo_height_1200;
-      }
       .header__flex-wraper {
         display: flex;
         align-items: center;
-      }
-
-      &-menu {
-        padding-left: 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-
-        &-link {
-          text-decoration: none;
-          color: #8d81ac;
-          font-size: 16px;
-          font-weight: 700;
-          line-height: 15px;
-          padding-right: 50px;
-        }
-
-      }
-
-      &-btn-buy {
-        align-self: center;
-        font-size: 15px;
-        padding: 10px 25px;
-        right: 0;
-        bottom: 54%;
-      }
-
-      &-btn-menu {
-        display: none;
       }
     }
 
     &__text {
 
-      &-title {
+      .text__title {
         font-size: 82px;
         padding-top: 60px;
         padding-bottom: 40px;
       }
 
-      &-description {
+      .text__description {
         font-size: 30px;
         padding-bottom: 40px;
       }
 
-      &-version {
+      .text__version {
         font-size: 16px;
       }
-
     }
+
+    &__trial {
+      padding-top: 20px;
+      font-size: 14px;
+    }
+  }
+
+  .menu {
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__link {
+      text-decoration: none;
+      color: #8d81ac;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 15px;
+      padding-right: 50px;
+    }
+  }
+
+  .btn__buy {
+    font-size: 15px;
+    padding: 15px 25px;
+    right: 0;
+    bottom: 54%;
+  }
+
+  .btn__menu {
+    display: none;
+  }
+
+  .btn__dowload {
+    font-size: 18px;
+    padding: 15px 0;
   }
 
 }

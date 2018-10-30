@@ -54,24 +54,14 @@ body {
   text-transform: capitalize;
 }
 
-.btn-vlns {
+.btn {
   cursor: pointer;
-  border-radius: 20px;
-  background-color: #8c80ab;
-  color: #ffffff;
+  align-self: center;
+  border-radius: 21px;
   font-weight: 700;
   line-height: 15px;
-}
-
-.btn {
-  border-radius: 21px;
-  padding: 15px 35px 15px 35px;
-  color: #ffffff;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 17px;
-  border: none;
-  letter-spacing: 1px;
+  text-decoration: none;
+  text-align: center;
 }
 /*--------------------------------------------------------------------------------------------------------------------*/
 
