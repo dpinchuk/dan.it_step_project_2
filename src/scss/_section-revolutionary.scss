@@ -48,23 +48,24 @@
     font-weight: 400;
   }
 
-  &__btn-git-item:first-child,
-  &__btn-git-item:last-child {
-    margin-left: 0;
-    margin-right: 0;
-  }
+  &__git {
 
-  &__btn-git {
+    .git__item:first-child,
+    .git__item:last-child {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
     cursor: default;
     padding-top: 20px;
 
-    &-item {
+    .git__item {
       display: inline-block;
       margin-left: 10px;
       margin-right: 10px;
       margin-top: 15px;
 
-      &__left {
+      .item__left {
         float: left;
         display: inline-block;
         height: 25px;
@@ -74,19 +75,21 @@
         padding-top: 2px;
         background: linear-gradient(to top, #efefef, #ffffff);
 
-        &-text {
+        &-info {
           padding-left: 10px;
           padding-right: 10px;
-          &-item {
+
+          .info__name {
             display: inline-block;
             font-size: 12px;
             font-weight: 700;
             vertical-align: middle;
           }
+
         }
       }
 
-      &__right {
+      .item__right {
         padding-right: 10px;
         padding-left: 10px;
         vertical-align: bottom;
@@ -98,7 +101,7 @@
         font-size: 12px;
         font-weight: 700;
 
-        &-text {
+        &-count {
           display: inline-block;
           padding-top: 6px;
         }
@@ -112,7 +115,7 @@
 
 /*320*/
 /*--------------------------------------------------------------------------------------------------------------------*/
-@media only screen and (max-width: 400px) and (min-width: 0) {
+@media only screen and (max-width: 400px) {
   .section-revolutionary {
     margin-top: 120px;
     margin-bottom: 90px;
@@ -185,7 +188,7 @@
 
 /*1200*/
 /*--------------------------------------------------------------------------------------------------------------------*/
-@media screen and (max-width: 1200px) and (min-width: 769px) {
+@media screen and (min-width: 769px) {
   .section-revolutionary {
     margin-top: 155px;
     margin-bottom: 100px;
@@ -203,12 +206,6 @@
   }
 }
 /*--------------------------------------------------------------------------------------------------------------------*/
-
-
-
-
-
-
 
 
 /*--------------------------------------------------------------------------------------------------------------------*/
