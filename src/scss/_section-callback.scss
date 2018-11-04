@@ -40,23 +40,31 @@
   text-align: center;
 
   &__header,
-  &__header_768_1200 {
+  &__header7681200 {
     font-weight: 900;
     padding-bottom: 40px;
   }
 
   &__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
     outline: none;
-    &-name {
+    .form__item {
       outline: none;
+      margin-bottom: 15px;
     }
 
-    &-phone {
-      outline: none;
+    .form__subscribe,
+    .form__subscribe7681200 {
+      padding: 16px 30px;
+      font-size: 13px;
+      font-weight: 600 !important;
     }
 
-    &-subscribe,
-    &-subscribe_768_1200 {
+    .form__subscribe,
+    .form__subscribe7681200 {
       &:hover {
         cursor: pointer;
         background-color: #ffffff;
@@ -73,7 +81,7 @@
   }
 }
 
-.callback-form {
+.form-field {
   padding-left: 25px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -89,39 +97,33 @@
 
 /*320*/
 /*--------------------------------------------------------------------------------------------------------------------*/
-@media only screen and (max-width: 400px) and (min-width: 320px) {
-  .callback-form {
+@media only screen and (max-width: 400px) {
+  .form-field {
     width: 290px;
   }
   .section-callback {
-    &__header_768_1200 {
+    &__header7681200 {
       display: none;
     }
 
     &__header {
-      color:  #323232;
+      color: #323232;
       font-size: 24px;
       line-height: 34px;
     }
 
     &__form {
-      text-align: -webkit-center;
-      &-name {
-        margin-bottom: 15px;
-        display: block;
+      width: 75%;
+      margin: 0 auto;
 
+      .form__item {
       }
 
-      &-phone {
-        margin-bottom: 20px;
-        display: block;
+      .form__subscribe {
+        margin-top: 15px;
       }
 
-      &-subscribe {
-        display: block;
-      }
-
-      &-subscribe_768_1200 {
+      .form__subscribe7681200 {
         display: none;
       }
 
@@ -134,38 +136,33 @@
 /*480*/
 /*--------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 480px) and (min-width: 401px) {
-  .callback-form {
-    width: 320px;
+  .form-field {
+    width: 290px;
   }
 
   .section-callback {
-    &__header_768_1200 {
+    &__header7681200 {
       display: none;
     }
 
     &__header {
       color: #323232;
-      font-size: 28px;
+      font-size: 25px;
       line-height: 60px;
     }
 
     &__form {
-      text-align: -webkit-center;
-      &-name {
-        margin-bottom: 15px;
-        display: block;
+      width: 75%;
+      margin: 0 auto;
+
+      .form__item {
       }
 
-      &-phone {
-        margin-bottom: 20px;
-        display: block;
+      .form__subscribe {
+        margin-top: 15px;
       }
 
-      &-subscribe {
-        display: block;
-      }
-
-      &-subscribe_768_1200 {
+      .form__subscribe7681200 {
         display: none;
       }
     }
@@ -178,12 +175,12 @@
 /*768*/
 /*--------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 992px) and (min-width: 481px) {
-  .callback-form {
+  .form-field {
     width: 335px;
   }
 
   .section-callback {
-    &__header_768_1200 {
+    &__header7681200 {
       color: #635c73;
       font-size: 30px;
       font-weight: 700;
@@ -195,23 +192,16 @@
     }
 
     &__form {
-      text-align: center;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
 
-      &-name {
+      .form__item {
+        margin-bottom: 0;
       }
 
-      &-phone {
-      }
-
-      &-subscribe {
+      .form__subscribe {
         display: none;
       }
 
-      &-subscribe_768_1200 {
-        margin-top: 25px;
+      .form__subscribe7681200 {
         display: block;
       }
     }
@@ -222,13 +212,13 @@
 
 /*1200*/
 /*--------------------------------------------------------------------------------------------------------------------*/
-@media only screen and (max-width: 1200px) and (min-width: 993px) {
-  .callback-form {
+@media only screen and (min-width: 993px) {
+  .form-field {
     width: 335px;
   }
 
   .section-callback {
-    &__header_768_1200 {
+    &__header7681200 {
       color: #635c73;
       font-size: 30px;
       font-weight: 700;
@@ -246,21 +236,17 @@
     }
 
     &__form {
-      display: -webkit-inline-box;
 
-      &-name {
+      .form__item {
+        margin-bottom: 0;
       }
 
-      &-phone {
-      }
-
-      &-subscribe {
+      .form__subscribe {
         display: none;
       }
 
-      &-subscribe_768_1200 {
+      .form__subscribe7681200 {
         display: block;
-        margin-left: 50px;
       }
     }
   }

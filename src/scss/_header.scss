@@ -73,8 +73,9 @@ $btn_menu_height_1200: 21px;
 /*--------------------------------------------------------------------------------------------------------------------*/
 .header {
   position: relative;
+  margin-bottom: 70px;
 
-  .wraper-container {
+  .wraper-header {
     background-color: #262627;
   }
   
@@ -115,9 +116,6 @@ $btn_menu_height_1200: 21px;
     left: 0;
     right: 0;
     width: 290px;
-    //top: 100%;
-    //left: 50%;
-    //transform: translate(-50%, -50%);
   }
 
   &__trial {
@@ -142,7 +140,6 @@ $btn_menu_height_1200: 21px;
 @media only screen and (max-width: 400px) {
   .header {
     background: url($bg_header_320);
-    //height: 100%;
     height: 718px;
     background-position: center;
     background-repeat: no-repeat;
@@ -219,7 +216,6 @@ $btn_menu_height_1200: 21px;
 
   .header {
     background: url($bg_header_480);
-    //height: 100%;
     height: 834px;
     background-position: center;
     background-repeat: no-repeat;
@@ -294,7 +290,6 @@ $btn_menu_height_1200: 21px;
 @media screen and (max-width: 992px) and (min-width: 481px) {
   .header {
     background: url($bg_header_768);
-    //height: 100%;
     height: 800px;
     background-position: center;
     background-repeat: no-repeat;
@@ -377,11 +372,9 @@ $btn_menu_height_1200: 21px;
 
 /*1200*/
 /*--------------------------------------------------------------------------------------------------------------------*/
-//@media only screen and (max-width: 1200px) and (min-width: 993px) {
 @media only screen and (min-width: 993px) {
   .header {
     background: url($bg_header_1200);
-    //height: 100%;
     height: 800px;
     background-position: center;
     background-repeat: no-repeat;
