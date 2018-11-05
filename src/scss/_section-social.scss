@@ -40,13 +40,13 @@
     display: none;
   }
 
-  &__carusel {
+  .carusel {
     transition: width 1s;
     text-align: center;
 
-    &-social-item {
+    &__items {
 
-      &__person {
+      .item__person {
         padding-bottom: 20px;
 
         &-img {
@@ -54,14 +54,14 @@
         }
 
         &-data {
-          &-name {
+          .data__name {
             color: #474747;
             font-size: 24px;
             font-weight: 700;
             line-height: 32px;
           }
 
-          &-position {
+          .data__position {
             color: #8d81ac;
             font-size: 16px;
             font-weight: 400;
@@ -71,7 +71,7 @@
 
       }
 
-      &__description {
+      .item__description {
         span {
           color: #8d81ac;
         }
@@ -83,7 +83,7 @@
         line-height: 24px;
       }
 
-      &__time {
+      .item__time {
         color: #848e97;
         font-size: 16px;
         font-weight: 400;
@@ -92,11 +92,11 @@
     }
   }
 
-  &__social-nets {
+  .social__nets {
     text-align: center;
 
-    &__net {
-      &-github-btn {
+    &-btn {
+      .btn__git {
         &:hover {
           background-color: #2b414d;
           color: #f3f3f3;
@@ -109,7 +109,7 @@
 
       }
 
-      &-twitter-btn {
+      .btn__twitter {
         &:hover {
           border: 1px solid #26a6d1;
           background-color: #ffffff;
@@ -122,7 +122,7 @@
         color: #ffffff;
       }
 
-      &-facebook-btn {
+      .btn__facebook {
         &:hover {
           border: 1px solid #3b5998;
           background-color: #ffffff;
@@ -135,7 +135,7 @@
         color: #ffffff;
       }
 
-      &-followers {
+      .net-followers {
         color: #848e97;
         font-size: 14px;
         font-weight: 400;
@@ -182,7 +182,7 @@
 
 /*320*/
 /*--------------------------------------------------------------------------------------------------------------------*/
-@media only screen and (max-width: 400px) and (min-width: 320px) {
+@media only screen and (max-width: 400px) {
   .section-social {
     position: relative;
     margin: 0 auto;
@@ -190,26 +190,30 @@
     padding-top: 50px;
     padding-bottom: 60px;
 
-    &__carusel {
+    .carusel {
       display: flex;
 
-      &-social-item {
+      &__items {
         width: 80%;
         display: inline-block;
 
-        &__person {
+        .item__person {
 
           &-img {
             padding-bottom: 25px;
           }
 
           &-data {
+            .data__name {
+              padding-bottom: 10px;
+            }
 
+            .data__position {
+              padding-bottom: 25px;
+            }
           }
 
         }
-
-
 
         &-name {
           padding-bottom: 10px;
