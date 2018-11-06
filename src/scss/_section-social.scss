@@ -68,7 +68,6 @@
             line-height: 32px;
           }
         }
-
       }
 
       .item__description {
@@ -96,6 +95,7 @@
     text-align: center;
 
     &-btn {
+
       .btn__git {
         &:hover {
           background-color: #2b414d;
@@ -104,9 +104,7 @@
 
         display: block;
         background-color: #f3f3f3;
-        margin-bottom: 20px;
         color: #000000;
-
       }
 
       .btn__twitter {
@@ -118,7 +116,6 @@
 
         display: block;
         background-color: #26a6d1;
-        margin-bottom: 20px;
         color: #ffffff;
       }
 
@@ -131,7 +128,6 @@
 
         display: block;
         background-color: #3b5998;
-        margin-bottom: 20px;
         color: #ffffff;
       }
 
@@ -143,8 +139,11 @@
       }
 
       padding-bottom: 30px;
-    }
 
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
   }
 }
 
@@ -194,8 +193,7 @@
       display: flex;
 
       &__items {
-        width: 80%;
-        display: inline-block;
+        padding-bottom: 35px;
 
         .item__person {
 
@@ -209,63 +207,52 @@
             }
 
             .data__position {
-              padding-bottom: 25px;
             }
           }
-
         }
 
-        &-name {
-          padding-bottom: 10px;
-        }
-
-        &__position {
-          padding-bottom: 25px;
-        }
-
-        &-description {
+        &__description {
           padding-bottom: 15px;
         }
 
-        &-time {
+        &__time {
           padding-bottom: 35px;
         }
       }
-
     }
 
-    &__social-nets {
+    &__line {
+    }
+
+    .social__nets {
       text-align: center;
 
-      &__net {
-        &-github-btn {
+      &-btn {
+        width: 85%;
+        margin: 0 auto;
+
+        .btn__git {
           display: block;
           background-color: #f3f3f3;
-          margin-bottom: 10px;
         }
 
-        &-twitter-btn {
+        .btn__twitter {
           display: block;
           background-color: #26a6d1;
-          margin-bottom: 10px;
         }
 
-        &-facebook-btn {
+        .btn__facebook {
           display: block;
           background-color: #3b5998;
-          margin-bottom: 10px;
         }
-
-        padding-bottom: 30px;
       }
-
     }
-
   }
 
   .btn-social {
     text-decoration: none;
     padding: 10px 50px 10px 50px;
+    margin-bottom: 10px;
   }
 
 }
@@ -282,94 +269,69 @@
     padding-top: 50px;
     padding-bottom: 60px;
 
-    &__carusel {
+    .carusel {
       display: flex;
 
-      &-social-item {
-        width: 80%;
-        display: inline-block;
+      &__items {
+        padding-bottom: 35px;
 
-        &__person {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
+        .item__person {
 
           &-img {
             padding-bottom: 25px;
           }
 
           &-data {
-            text-align: left;
-            padding-left: 20px;
-            padding-top: 15px;
-
-            &-name {
+            .data__name {
               padding-bottom: 10px;
             }
 
-            &-position {
-              padding-bottom: 25px;
+            .data__position {
             }
           }
         }
-
-        //&__img {
-        //  padding-bottom: 25px;
-        //}
-
-        //&__name {
-        //  padding-bottom: 10px;
-        //}
-        //
-        //&__position {
-        //  padding-bottom: 25px;
-        //}
 
         &__description {
           padding-bottom: 15px;
         }
 
         &__time {
-          padding-bottom: 35px;
         }
       }
-
     }
 
-    &__social-nets {
+    &__line {
+    }
+
+    .social__nets {
       text-align: center;
 
-      &__net {
-        &-github-btn {
+      &-btn {
+        width: 85%;
+        margin: 0 auto;
+
+        .btn__git {
           display: block;
           background-color: #f3f3f3;
-          margin-bottom: 10px;
         }
 
-        &-twitter-btn {
+        .btn__twitter {
           display: block;
           background-color: #26a6d1;
-          margin-bottom: 10px;
         }
 
-        &-facebook-btn {
+        .btn__facebook {
           display: block;
           background-color: #3b5998;
-          margin-bottom: 10px;
         }
-
-        width: 60%;
-        display: inline-grid;
-        padding-bottom: 30px;
       }
-
     }
-
   }
 
   .btn-social {
     text-decoration: none;
     padding: 10px 50px 10px 50px;
+    margin-bottom: 10px;
   }
 
 }
@@ -386,23 +348,26 @@
     padding-top: 50px;
     padding-bottom: 60px;
 
-    &__carusel {
+    .carusel {
       display: flex;
 
-      &-social-item {
-        width: 80%;
-        display: inline-block;
+      &__items {
+        padding-bottom: 35px;
 
-        &__img {
-          padding-bottom: 25px;
-        }
+        .item__person {
 
-        &__name {
-          padding-bottom: 10px;
-        }
+          &-img {
+            padding-bottom: 25px;
+          }
 
-        &__position {
-          padding-bottom: 25px;
+          &-data {
+            .data__name {
+              padding-bottom: 10px;
+            }
+
+            .data__position {
+            }
+          }
         }
 
         &__description {
@@ -410,65 +375,45 @@
         }
 
         &__time {
-          padding-bottom: 10px;
         }
       }
-
     }
 
     &__line {
-      display: block;
-      background-color: #f3f3f3;
-      border: none;
-      color: #f3f3f3;
-      height: 2px;
-      margin-bottom: 60px;
     }
 
-    &__social-nets {
+    .social__nets {
+      text-align: center;
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: space-between;
 
-      &__net {
-        &-github-btn {
-          display: block;
-          background-color: #f3f3f3;
-          margin-bottom: 10px;
-        }
-
-        &-twitter-btn {
-          display: block;
-          background-color: #26a6d1;
-          margin-bottom: 10px;
-        }
-
-        &-facebook-btn {
-          display: block;
-          background-color: #3b5998;
-          margin-bottom: 10px;
-        }
-
+      &-btn {
+        margin: 0 auto;
         width: 40%;
 
-        &:nth-child(1) {
-          padding-right: 10px;
+        .btn__git {
+          display: block;
+          background-color: #f3f3f3;
         }
 
-        &:nth-child(2) {
-          padding-left: 10px;
+        .btn__twitter {
+          display: block;
+          background-color: #26a6d1;
         }
 
-        padding-bottom: 30px;
+        .btn__facebook {
+          display: block;
+          background-color: #3b5998;
+        }
       }
-
     }
-
   }
 
   .btn-social {
     text-decoration: none;
     padding: 10px 50px 10px 50px;
+    margin-bottom: 10px;
   }
 
 }
@@ -477,7 +422,7 @@
 
 /*1200*/
 /*--------------------------------------------------------------------------------------------------------------------*/
-@media only screen and (max-width: 1200px) and (min-width: 993px) {
+@media only screen and (min-width: 993px) {
   .section-social {
     position: relative;
     margin: 0 auto;
@@ -485,23 +430,26 @@
     padding-top: 50px;
     padding-bottom: 60px;
 
-    &__carusel {
+    .carusel {
       display: flex;
 
-      &-social-item {
-        width: 80%;
-        display: inline-block;
+      &__items {
+        padding-bottom: 35px;
 
-        &__img {
-          padding-bottom: 25px;
-        }
+        .item__person {
 
-        &__name {
-          padding-bottom: 10px;
-        }
+          &-img {
+            padding-bottom: 25px;
+          }
 
-        &__position {
-          padding-bottom: 25px;
+          &-data {
+            .data__name {
+              padding-bottom: 10px;
+            }
+
+            .data__position {
+            }
+          }
         }
 
         &__description {
@@ -509,62 +457,45 @@
         }
 
         &__time {
-          padding-bottom: 10px;
         }
       }
-
     }
 
     &__line {
-      display: block;
-      background-color: #f3f3f3;
-      border: none;
-      color: #f3f3f3;
-      height: 2px;
-      margin-bottom: 60px;
     }
 
-    &__social-nets {
+    .social__nets {
+      text-align: center;
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: space-between;
 
-      &__net {
-        &-github-btn {
+      &-btn {
+        margin: 0 auto;
+        width: 30%;
+
+        .btn__git {
           display: block;
           background-color: #f3f3f3;
-          margin-bottom: 10px;
         }
 
-        &-twitter-btn {
+        .btn__twitter {
           display: block;
           background-color: #26a6d1;
-          margin-bottom: 10px;
         }
 
-        &-facebook-btn {
+        .btn__facebook {
           display: block;
           background-color: #3b5998;
-          margin-bottom: 10px;
         }
-
-        width: 25%;
-
-        &:nth-child(2) {
-          margin-left: 40px;
-          margin-right: 40px;
-        }
-
-        padding-bottom: 30px;
       }
-
     }
-
   }
 
   .btn-social {
     text-decoration: none;
     padding: 10px 50px 10px 50px;
+    margin-bottom: 10px;
   }
 
 }

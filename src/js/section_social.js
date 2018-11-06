@@ -42,31 +42,30 @@ let current = 0;
 
 let readySocial = () =>  {
     document.getElementById("socialItem").innerHTML =
-        "<div class='section-social__carusel-social-item__person'>" +
-        "   <img src='" + arrayObjectSocial[0].img + "' alt='' class='section-social__carusel-social-item__img'>" +
-        "   <div class='section-social__carusel-social-item__person-data'>" +
-        "       <h3 class='section-social__carusel-social-item__name text-capitalize'>" + arrayObjectSocial[0].name + "</h3>" +
-        "       <h3 class='section-social__carusel-social-item__position text-capitalize'>" + arrayObjectSocial[0].position + "</h3>" +
-        "   </div>" +
+        "<div class='item__person'>" +
+        "    <img src='" + arrayObjectSocial[0].img + "' alt='' class='item__person-img'>" +
+        "    <div class='item__person-data'>" +
+        "        <h3 class='data__name text-capitalize'>" + arrayObjectSocial[0].name + "</h3>" +
+        "        <h3 class='data__position text-capitalize'>" + arrayObjectSocial[0].position + "</h3>" +
+        "    </div>" +
         "</div>" +
-        "<p class='section-social__carusel-social-item__description'><span>" + arrayObjectSocial[0].span + "</span>" + " " + arrayObjectSocial[0].description + "</p>" +
-        "<h3 class='section-social__carusel-social-item__time'>" + arrayObjectSocial[0].time + "</h3>";
+        "<p class='item__description'><span>" + arrayObjectSocial[0].span + "</span>" + arrayObjectSocial[0].description + "</p>" +
+        "<h3 class='item__time'>" + arrayObjectSocial[0].time + "</h3>";
 };
 
 document.addEventListener("DOMContentLoaded", readySocial);
 
 let showImages = () => {
-    //clearDiv("socialItem");
     document.getElementById("socialItem").innerHTML =
-        "<div class='section-social__carusel-social-item__person'>" +
-        "   <img src='" + arrayObjectSocial[current].img + "' alt='' class='section-social__carusel-social-item__img'>" +
-        "   <div class='section-social__carusel-social-item__person-data'>" +
-        "       <h3 class='section-social__carusel-social-item__name text-capitalize'>" + arrayObjectSocial[current].name + "</h3>" +
-        "       <h3 class='section-social__carusel-social-item__position text-capitalize'>" + arrayObjectSocial[current].position + "</h3>" +
-        "   </div>" +
+        "<div class='item__person'>" +
+        "    <img src='" + arrayObjectSocial[current].img + "' alt='' class='item__person-img'>" +
+        "    <div class='item__person-data'>" +
+        "        <h3 class='data__name text-capitalize'>" + arrayObjectSocial[current].name + "</h3>" +
+        "        <h3 class='data__position text-capitalize'>" + arrayObjectSocial[current].position + "</h3>" +
+        "    </div>" +
         "</div>" +
-        "<p class='section-social__carusel-social-item__description'><span>" + arrayObjectSocial[0].span + "</span>" + " " + arrayObjectSocial[current].description + "</p>" +
-        "<h3 class='section-social__carusel-social-item__time'>" + arrayObjectSocial[current].time + "</h3>";
+        "<p class='item__description'><span>" + arrayObjectSocial[current].span + "</span>" + arrayObjectSocial[current].description + "</p>" +
+        "<h3 class='item__time'>" + arrayObjectSocial[current].time + "</h3>";
 };
 
 let previous = () => {
