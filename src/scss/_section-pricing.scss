@@ -46,7 +46,7 @@
   &__features {
     text-align: -webkit-center;
 
-    &-item3 {
+    .features__item3 {
       position: relative;
       padding-bottom: 30px;
       max-width: 300px;
@@ -55,7 +55,7 @@
       cursor: auto;
       opacity: .9;
 
-      &__header3 {
+      .item3__header3 {
         padding: 30px 35px;
         color: #ffffff;
         font-size: 24px;
@@ -63,13 +63,13 @@
         background-color: #533a41;
       }
 
-      &__content3 {
+      .item3__content3 {
         background-color: #533a41;
         padding-top: 20px;
         padding-bottom: 40px;
         opacity: .85;
 
-        &-price3 {
+        .content3__price3 {
           color: #ffffff;
           font-size: 82px;
           font-weight: 700;
@@ -85,7 +85,7 @@
 
         }
 
-        &-period3 {
+        .content3__period3 {
           color: #895e8c;
           font-size: 14px;
           font-weight: 400;
@@ -93,14 +93,14 @@
           padding-bottom: 40px;
         }
 
-        &-line3 {
+        .content3__line3 {
           border: 3px solid #8d81ac;
           background-color: #8d81ac;
           width: 60px;
           margin-bottom: 170px;
         }
 
-        &-license3 {
+        .content3__license3 {
           width: 170px;
           position: absolute;
           color: #ffffff;
@@ -111,7 +111,7 @@
           top: 60%;
           left: 22%;
 
-          &-item3 {
+          .license3__item3 {
             padding-bottom: 20px;
             text-align: center;
 
@@ -121,12 +121,7 @@
           }
         }
 
-        &-item3 {
-          padding-bottom: 20px;
-          text-align: center;
-        }
-
-        &-btn3 {
+        .content3__btn3 {
           background-color: #746778;
           text-decoration: none;
           margin-bottom: 40px;
@@ -142,7 +137,7 @@
 
     }
 
-    &-item {
+    .features__item {
       position: relative;
       padding-bottom: 30px;
       max-width: 260px;
@@ -151,7 +146,7 @@
       cursor: auto;
       opacity: .8;
 
-      &__header {
+      .item__header {
         padding: 30px 35px;
         color: #ff3919;
         font-size: 24px;
@@ -159,13 +154,13 @@
         background-color: #665769;
       }
 
-      &__content {
+      .item__content {
         background-color: #5d4d60;
         padding-top: 40px;
         padding-bottom: 40px;
         opacity: .75;
 
-        &-price {
+        .content__pricee {
           span {
             font-weight: 400;
             color: #ff3919;
@@ -179,7 +174,7 @@
           letter-spacing: 3px;
         }
 
-        &-period {
+        .content__period {
           color: #897e8c;
           font-size: 14px;
           font-weight: 400;
@@ -187,14 +182,14 @@
           padding-bottom: 40px;
         }
 
-        &-line {
+        .content__line {
           border: 3px solid #8d81ac;
           background-color: #8d81ac;
           width: 60px;
           margin-bottom: 130px;
         }
 
-        &-license {
+        .content__license {
           width: 210px;
           position: absolute;
           color: #ffffff;
@@ -207,17 +202,17 @@
             left: 15%;
           }
 
-          &-item {
+          .license__item {
             padding-bottom: 20px;
             text-align: center;
           }
 
-          &-item:last-child {
+          .license__item:last-child {
             padding-bottom: 0;
           }
         }
 
-        &-btn {
+        .content__btn {
           &:hover {
             cursor: pointer;
             background-color: #ffffff;
