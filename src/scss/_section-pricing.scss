@@ -44,107 +44,15 @@
   }
 
   &__features {
-    text-align: -webkit-center;
-
-    .features__item3 {
-      position: relative;
-      padding-bottom: 30px;
-      max-width: 300px;
-      text-align: center;
-      display: block;
-      cursor: auto;
-      opacity: .9;
-
-      .item3__header3 {
-        padding: 30px 35px;
-        color: #ffffff;
-        font-size: 24px;
-        font-weight: 400;
-        background-color: #533a41;
-      }
-
-      .item3__content3 {
-        background-color: #533a41;
-        padding-top: 20px;
-        padding-bottom: 40px;
-        opacity: .85;
-
-        .content3__price3 {
-          color: #ffffff;
-          font-size: 82px;
-          font-weight: 700;
-          line-height: 15px;
-          margin-top: 30px;
-          padding-bottom: 40px;
-          letter-spacing: 3px;
-
-          span {
-            font-weight: 400;
-            color: #ff3919;
-          }
-
-        }
-
-        .content3__period3 {
-          color: #895e8c;
-          font-size: 14px;
-          font-weight: 400;
-          line-height: 15px;
-          padding-bottom: 40px;
-        }
-
-        .content3__line3 {
-          border: 3px solid #8d81ac;
-          background-color: #8d81ac;
-          width: 60px;
-          margin-bottom: 170px;
-        }
-
-        .content3__license3 {
-          width: 170px;
-          position: absolute;
-          color: #ffffff;
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 5px;
-          padding-bottom: 20px;
-          top: 60%;
-          left: 22%;
-
-          .license3__item3 {
-            padding-bottom: 20px;
-            text-align: center;
-
-            &:last-child {
-              padding-bottom: 0;
-            }
-          }
-        }
-
-        .content3__btn3 {
-          background-color: #746778;
-          text-decoration: none;
-          margin-bottom: 40px;
-
-          &:hover {
-            cursor: pointer;
-            background-color: #ffffff;
-            color: #8c80ab;
-          }
-        }
-
-      }
-
-    }
 
     .features__item {
       position: relative;
       padding-bottom: 30px;
-      max-width: 260px;
-      text-align: center;
-      display: block;
       cursor: auto;
-      opacity: .8;
+      opacity: .75;
+      width: 257px;
+      margin: 0 auto;
+      margin-bottom: 50px;
 
       .item__header {
         padding: 30px 35px;
@@ -160,17 +68,16 @@
         padding-bottom: 40px;
         opacity: .75;
 
-        .content__pricee {
+        .content__price {
           span {
             font-weight: 400;
             color: #ff3919;
           }
-
           color: #ffffff;
           font-size: 60px;
           font-weight: 700;
           line-height: 15px;
-          padding-bottom: 25px;
+          padding-bottom: 50px;
           letter-spacing: 3px;
         }
 
@@ -185,22 +92,19 @@
         .content__line {
           border: 3px solid #8d81ac;
           background-color: #8d81ac;
+          margin-bottom: 100px;
           width: 60px;
-          margin-bottom: 130px;
         }
 
         .content__license {
-          width: 210px;
           position: absolute;
           color: #ffffff;
           font-size: 16px;
           font-weight: 400;
           line-height: 5px;
-          top: 60%;
-          left: 10%;
-          &:nth-child(3) {
-            left: 15%;
-          }
+          top: 65%;
+          left: 0;
+          right: 0;
 
           .license__item {
             padding-bottom: 20px;
@@ -213,19 +117,139 @@
         }
 
         .content__btn {
+          padding: 15px 35px;
+          background-color: #665769;
+          color: #ffffff;
+          text-decoration: none;
+          margin-bottom: 40px;
+
           &:hover {
             cursor: pointer;
             background-color: #ffffff;
             color: #8c80ab;
           }
 
-          background-color: #746778;
-          text-decoration: none;
-          margin-bottom: 40px;
         }
+
       }
 
+
+
+
+
+
+
+      &:nth-child(3) {
+        position: relative;
+        padding-bottom: 30px;
+        cursor: auto;
+        opacity: .75;
+        width: 300px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+
+        .item__header {
+          padding: 45px 95px;
+          color: #ffffff;
+          font-size: 24px;
+          font-weight: 400;
+          background-color: #000000;
+          opacity: .75;
+        }
+
+        .item__content {
+          background-color: #000000;
+          padding-top: 40px;
+          padding-bottom: 40px;
+          opacity: .5;
+
+          .content__price {
+            span {
+              font-weight: 400;
+              color: #ffffff;
+            }
+            color: #ffffff;
+            font-size: 80px;
+            font-weight: 700;
+            line-height: 15px;
+            padding-bottom: 50px;
+            letter-spacing: 3px;
+          }
+
+          .content__period {
+            color: #897e8c;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 15px;
+            padding-bottom: 40px;
+          }
+
+          .content__line {
+            border: 3px solid #8d81ac;
+            background-color: #8d81ac;
+            margin-bottom: 100px;
+            width: 60px;
+          }
+
+          .content__license {
+            position: absolute;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 5px;
+            top: 65%;
+            left: 0;
+            right: 0;
+
+            .license__item {
+              padding-bottom: 20px;
+              text-align: center;
+            }
+
+            .license__item:last-child {
+              padding-bottom: 0;
+            }
+          }
+
+          .content__btn {
+            padding: 15px 35px;
+            background-color: #665769;
+            color: #ffffff;
+            text-decoration: none;
+            margin-bottom: 40px;
+
+            &:hover {
+              cursor: pointer;
+              background-color: #ffffff;
+              color: #8c80ab;
+            }
+
+          }
+
+        }
+
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
+
   }
 
 }
@@ -234,7 +258,7 @@
 
 /*320*/
 /*--------------------------------------------------------------------------------------------------------------------*/
-@media only screen and (max-width: 400px) and (min-width: 320px) {
+@media only screen and (max-width: 400px) {
   .section-pricing {
     background-image: url(../img/320/section-pricing/bg_pricing_320.png);
 
@@ -244,18 +268,9 @@
 
     &__features {
 
-      &-item {
-        &__header {
-          font-size: 24px;
-        }
-
-        &__content {
-          &-price {
-
-          }
-        }
-
+      .features__item {
       }
+
     }
   }
 
@@ -273,6 +288,12 @@
       font-size: 42px;
     }
 
+    &__features {
+
+      .features__item {
+      }
+
+    }
   }
 
 }
@@ -287,41 +308,22 @@
 
     &__header {
       font-size: 42px;
-      padding-bottom: 0;
     }
 
     &__features {
-      width: 650px;
-      margin: 0 auto;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: space-evenly;
+      padding-left: 50px;
+      padding-right: 50px;
 
-      &-item3 {
-        margin-top: 55px;
-        width: 300px;
+      .features__item {
+        margin-bottom: 50px;
+        margin-left: 25px;
+        margin-right: 25px;
       }
 
-      &-item {
-        width: 260px;
-        padding-top: 90px;
-
-        &__header {
-          font-size: 24px;
-        }
-
-        &__content {
-          &-price {
-          }
-
-          &-license {
-            top: 65%;
-          }
-        }
-
-      }
     }
-
   }
 
 }
@@ -330,42 +332,24 @@
 
 /*1200*/
 /*--------------------------------------------------------------------------------------------------------------------*/
-@media only screen and (max-width: 1200px) and (min-width: 993px) {
+@media only screen and (min-width: 993px) {
   .section-pricing {
     background-image: url(../img/1200/section-pricing/bg_pricing_1200.png);
 
     &__header {
       font-size: 48px;
-      padding-bottom: 120px;
     }
 
     &__features {
-      margin: 0 auto;
       display: flex;
-      flex-wrap: wrap;
       justify-content: space-evenly;
 
-      &-item3 {
-        margin-top: 0;
-        width: 300px;
+      .features__item {
+        margin-left: 10px;
+        margin-right: 10px;
       }
 
-      &-item {
-        width: 260px;
-        margin-top: 30px;
-
-        &__header {
-          font-size: 24px;
-        }
-
-        &__content {
-          &-price {
-          }
-        }
-
-      }
     }
-
   }
 
 }

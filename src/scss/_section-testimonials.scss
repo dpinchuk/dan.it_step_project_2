@@ -34,7 +34,6 @@
 /*Section 'section-testimonials'*/
 /*--------------------------------------------------------------------------------------------------------------------*/
 .section-testimonials {
-  background-image: url(../img/320/section-testimonials/bg_testimonials.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -89,6 +88,7 @@
 /*--------------------------------------------------------------------------------------------------------------------*/
 @media only screen and (max-width: 400px) {
   .section-testimonials {
+    background-image: url(../img/320/section-testimonials/testimonials_320.png);
 
     &__header {
       font-size: 36px;
@@ -124,6 +124,7 @@
 /*--------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 480px) and (min-width: 401px) {
   .section-testimonials {
+    background-image: url(../img/480/section-testimonials/testimonials_480.png);
 
     &__header {
       font-size: 42px;
@@ -158,6 +159,7 @@
 /*--------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 992px) and (min-width: 481px) {
   .section-testimonials {
+    background-image: url(../img/768/section-testimonials/testimonials_768.png);
 
     &__header {
       font-size: 42px;
@@ -195,6 +197,7 @@
 /*--------------------------------------------------------------------------------------------------------------------*/
 @media only screen and (min-width: 993px) {
   .section-testimonials {
+    background-image: url(../img/1200/section-testimonials/testimonials_1200.png);
 
     &__header {
       font-size: 48px;
