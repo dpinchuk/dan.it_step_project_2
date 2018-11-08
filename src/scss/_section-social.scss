@@ -161,6 +161,7 @@
 }
 
 .btn-social {
+  position: relative;
   border-radius: 4px;
   text-decoration: none;
   font-size: 21px;
@@ -169,8 +170,9 @@
 }
 
 .icon-social {
-  float: left;
-  margin-top: 5px;
+  position: absolute;
+  left: 15%;
+  top: 30%;
 }
 
 .prev {
