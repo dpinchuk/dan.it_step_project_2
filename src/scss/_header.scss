@@ -3,6 +3,7 @@
 
 /*Common Section variables*/
 /*--------------------------------------------------------------------------------------------------------------------*/
+$btn_cross: "../img/common/header/cross.png";
 /*--------------------------------------------------------------------------------------------------------------------*/
 
 /*Header variables 320*/
@@ -13,7 +14,7 @@ $logo_320: "../img/320/header/logo_320.png";
 $logo_width_320: 43px;
 $logo_height_320: 41px;
 
-$btn_menu_320: "../img/320/header/header_button_menu_320.png";
+$btn_menu_320: "../img/common/header/header_button_menu.png";
 $btn_menu_width_320: 26px;
 $btn_menu_height_320: 21px;
 /*--------------------------------------------------------------------------------------------------------------------*/
@@ -26,7 +27,7 @@ $logo_480: "../img/480/header/logo_480.png";
 $logo_width_480: 147px;
 $logo_height_480: 41px;
 
-$btn_menu_480: "../img/480/header/header_button_menu_480.png";
+$btn_menu_480: "../img/common/header/header_button_menu.png";
 $btn_menu_width_480: 26px;
 $btn_menu_height_480: 21px;
 /*--------------------------------------------------------------------------------------------------------------------*/
@@ -134,6 +135,12 @@ $btn_menu_height_1200: 21px;
   right: -45px;
   color: #fff;
   line-height: 35px;
+}
+
+.cross {
+  background: url($btn_cross);
+  width: 26px;
+  height: 26px;
 }
 /*--------------------------------------------------------------------------------------------------------------------*/
 
